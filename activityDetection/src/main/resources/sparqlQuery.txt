@@ -1,0 +1,6 @@
+SELECT  ?dataValues
+	WHERE { ?sensorOutput  DUL:hasDataValue ?dataValues . 
+	                 ?observation ssn:observationResult ?sensorOutput .
+	                 ?observation  ssn:observedProperty ?property  .
+	                 FILTER regex(str(?property), "inBed")               
+	              }
