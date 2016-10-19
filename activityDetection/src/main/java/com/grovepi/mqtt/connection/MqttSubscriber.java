@@ -1,17 +1,11 @@
 package com.grovepi.mqtt.connection;
 
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
-//import org.semom.semantic.publisher.SemanticPublisher;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 
 public class MqttSubscriber implements MqttCallback {
     MqttClient client;
@@ -30,8 +24,7 @@ public class MqttSubscriber implements MqttCallback {
 	
 	public MqttSubscriber() throws MqttException {
 		client = new MqttClient(BROKER_URL, MY_MQTT_CLIENT_ID);
-	    client.setCallback(this);
-
+	    client.setCallback(this); 
 	}
 
 	  public void runClient() {
@@ -74,9 +67,9 @@ public class MqttSubscriber implements MqttCallback {
 	        throws Exception {
 		System.out.println("New message on topic: " + topic + "is: " + message);
 		System.out.println("-------------------------------------------------");
-		System.out.println("| Topic:" + topic.getBytes());
+		System.out.println("| Topic:" + topic);
 		System.out.println("| Message: " + new String(message.getPayload()));
-		System.out.println("-------------------------------------------------");   
+		System.out.println("-------------------------------------------------");
 	//	updateLocalOntology
 	}
 
