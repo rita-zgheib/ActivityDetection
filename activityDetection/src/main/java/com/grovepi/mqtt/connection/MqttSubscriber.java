@@ -28,13 +28,10 @@ public class MqttSubscriber implements MqttCallback {
 	}
 
 	  public void runClient() {
-
 		    connectOptions = new MqttConnectOptions();
 		    connectOptions.setCleanSession(true);
 		    connectOptions.setKeepAliveInterval(100);
-
 		    try {
-
 		      System.out.println("Attempting Connection to " + BROKER_URL);
 		      client.connect(connectOptions);
 		      System.out.println("Connected to " + BROKER_URL);
@@ -46,7 +43,6 @@ public class MqttSubscriber implements MqttCallback {
 		      System.err.println(me.getStackTrace());
 		      System.exit(-1);
 		    }
-
 		  }
 	public void subscribeTO(String topic) throws MqttException{		
 		client.subscribe(topic);
