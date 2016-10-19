@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.util.Random;
 
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
@@ -31,6 +32,7 @@ public class SemanticSensor {
 	private String property;
 	private String foi;
 	private String classification;
+	
 	
 	String ssnNamespace = "http://purl.oclc.org/NET/ssnx/ssn#"; 
 	String dulNamespace = "http://www.loa-cnr.it/ontologies/DUL.owl#";
@@ -91,6 +93,7 @@ public class SemanticSensor {
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		rep.initialize();
 		ValueFactory f = rep.getValueFactory();		
+		Random rand = new Random();
 		
 		//IRI classes
 		IRI observation = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#Observation"); 
@@ -103,8 +106,8 @@ public class SemanticSensor {
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
 		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace+ "pressureObservation1");
-		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "PressureOutput1");
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt());
+		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "sensorOutput"+rand);
 		
 		IRI PropertyInd = f.createIRI(ssnNamespace + property );
 		IRI foiInd = f.createIRI(ssnNamespace+ foi);

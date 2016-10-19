@@ -13,11 +13,13 @@ public class WearingClothes_App {
 		//create virtualSemanticSensor in ssnApplication
 		VirtualSemanticSensor wearingClothes = new VirtualSemanticSensor("WearingSensor",
 				"WearingClothesSensor1", "WearingClothes","activity", "");
-		wearingClothes.addSensorToOntology();		
-		//updateLocalOntology By adding the sensor
-		MqttSubscriber app =  new MqttSubscriber();
+		//wearingClothes.addSensorToOntology();		
+
+		VirtualSemanticSubscriber app =  new VirtualSemanticSubscriber();
 		app.runClient();
-		app.subscribeTO("personInBed");
+		String[] topics = new String[]{"personInBed","personUp","wardrobeOpened"};
+		app.subscribeTO(topics);
+		//app.subscribeTO("personInBed");
 		//	app.subscribeTO("personUp");
 		//	app.subscribeTO("wardrobeOpened");
 		//app.stopClient();

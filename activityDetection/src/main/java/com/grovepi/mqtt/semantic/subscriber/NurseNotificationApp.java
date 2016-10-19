@@ -9,7 +9,8 @@ public class NurseNotificationApp {
 	public static void main(String[] args) throws MqttException, InterruptedException {
 		MqttSubscriber app =  new MqttSubscriber();
 		app.runClient();
-		app.subscribeTO("wearingClothes");
+		String[] topics = new String[]{"personInBed"};
+		app.subscribeTO(topics);
 
 	}
 }

@@ -9,8 +9,8 @@ public class PressureSubscriber {
 	public static void main(String[] args) throws MqttException, InterruptedException {
 		MqttSubscriber app =  new MqttSubscriber();
 		app.runClient();
-		app.subscribeTO("personInBed");
-
+		String[] topics = new String[]{"personInBed"};
+		app.subscribeTO(topics);
 	}
 
 }

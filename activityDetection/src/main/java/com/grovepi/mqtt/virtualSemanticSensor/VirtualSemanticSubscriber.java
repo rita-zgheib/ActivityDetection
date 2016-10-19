@@ -1,4 +1,6 @@
-package com.grovepi.mqtt.connection;
+package com.grovepi.mqtt.virtualSemanticSensor;
+
+import java.util.HashMap;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
@@ -7,7 +9,11 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-public class MqttSubscriber implements MqttCallback {
+import com.grovepi.semantic.enrichment.LocalOntology;
+import com.grovepi.semantic.enrichment.VirtualSemanticSensor;
+
+
+public class VirtualSemanticSubscriber implements MqttCallback {
     MqttClient client;
     private MqttConnectOptions connectOptions;
     
@@ -16,22 +22,26 @@ public class MqttSubscriber implements MqttCallback {
 	 // private static final String BROKER_URL = "192.168.10.8:1883";
 	private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-sub";
 	//private static final Logger LOG = LoggerFactory.getLogger(SemanticPublisher.class);
-	private static final boolean PUBLISHER = false;
+	private static final boolean PUBLISHER = true;
 	private static final boolean SUBSCRIBER = true;
+//	private HashMap<String, MqttMessage > result;
 	
 	private static final int RETRIES = 3;
 	
 	
-	public MqttSubscriber() throws MqttException {
+	public VirtualSemanticSubscriber() throws MqttException {
 		client = new MqttClient(BROKER_URL, MY_MQTT_CLIENT_ID);
-	    client.setCallback(this); 
+	    client.setCallback(this);
+	//    result = new HashMap<String, MqttMessage >();
 	}
-
 	  public void runClient() {
+
 		    connectOptions = new MqttConnectOptions();
 		    connectOptions.setCleanSession(true);
 		    connectOptions.setKeepAliveInterval(100);
+
 		    try {
+
 		      System.out.println("Attempting Connection to " + BROKER_URL);
 		      client.connect(connectOptions);
 		      System.out.println("Connected to " + BROKER_URL);
@@ -43,6 +53,7 @@ public class MqttSubscriber implements MqttCallback {
 		      System.err.println(me.getStackTrace());
 		      System.exit(-1);
 		    }
+
 		  }
 	public void subscribeTO(String[] topic) throws MqttException{		
 		client.subscribe(topic);
@@ -61,11 +72,13 @@ public class MqttSubscriber implements MqttCallback {
 	
 	public void messageArrived(String topic, MqttMessage message)
 	        throws Exception {
-		System.out.println("New message on topic: " + topic + "is: " + message);
+	//	LocalOntology.updateOntology(topic, "activity", new String(message.getPayload()));
+		System.out.println("New message on topic: " + topic + " is: " + message);
 		System.out.println("-------------------------------------------------");
 		System.out.println("| Topic:" + topic);
 		System.out.println("| Message: " + new String(message.getPayload()));
 		System.out.println("-------------------------------------------------");
+	//	result.put(topic, message);
 	//	updateLocalOntology
 	}
 
@@ -78,13 +91,17 @@ public class MqttSubscriber implements MqttCallback {
 	    System.out.println("Disonnected from " + BROKER_URL);
 	    System.exit(0);
 	}
-/*
+
 	public static void main(String[] args) throws MqttException {
-		MqttSubscriber app =  new MqttSubscriber();
+		VirtualSemanticSubscriber app =  new VirtualSemanticSubscriber();
 		app.runClient();
-		app.subscribeTO("test");
+		String[] topics = new String[]{"personInBed","personUp","wardrobeOpened"};
+		app.subscribeTO(topics);
+		//app.subscribeTO("personInBed");
+		//app.subscribeTO("personUp");
+		//app.subscribeTO("wardrobeOpened");
 	}
 
-*/
+
 
 }

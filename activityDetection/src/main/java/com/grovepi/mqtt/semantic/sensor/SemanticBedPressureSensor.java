@@ -25,25 +25,28 @@ import usefulClasses.PressureObservation;
 public class SemanticBedPressureSensor {
 
 	public static void main(String[] args) throws Exception {
-		
+	/*	
 		SemanticSensor pressureSensor = new SemanticSensor("PressureSensor", 
 				"BedPressureSensor1", "personInBed","activity",""	); 
 		pressureSensor.addSensorToOntology();  
-		MqttPublisher app = new MqttPublisher();		
+				
 		//connect to the grovePi and retrieve messages each 10 minutes 
-		String message = "person is not in Bed"; //temporary message
+		String message = "The person is not in Bed"; //temporary message
+		String message1 = "The person is in Bed";
 		
 		//He creates a new observation for each message I need to make it dynamic
-		pressureSensor.addObservation(message); 
-		
+		 pressureSensor.addObservation(message); 
+		 pressureSensor.addObservation(message1); 
+		*/
 		//getting the message for a specific property
+		MqttPublisher app = new MqttPublisher();
 		PublisherSparqlQuery query = new PublisherSparqlQuery("personInBed");
 		BindingSet result = query.runQuery();
 		//creating MQTT message
 		MqttMessage msg = new MqttMessage(result.toString().getBytes());
 		app.runClient();
 		
-		for (int i = 0; i < 20; i++){
+		for (int i = 0; i < 3; i++){
 		app.sendMessage("personInBed", msg.toString());			
           		//System.out.print(button.isPressed() ? 1 : 0);	
 		Thread.sleep(200);

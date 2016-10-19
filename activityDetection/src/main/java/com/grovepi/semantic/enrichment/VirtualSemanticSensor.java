@@ -86,7 +86,7 @@ public class VirtualSemanticSensor {
 		 }		
 	}
 	
-	public void addObservation(String topic,String receivedOutput) throws FileNotFoundException{
+	public void addObservation(String topic,String newMsg) throws FileNotFoundException{
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		rep.initialize();
 		ValueFactory f = rep.getValueFactory();		
@@ -106,7 +106,7 @@ public class VirtualSemanticSensor {
 		IRI PropertyInd = f.createIRI(ssnNamespace + topic );
 		IRI foiInd = f.createIRI(ssnNamespace + foi );
 		
-		Literal val = f.createLiteral(receivedOutput);
+		Literal val = f.createLiteral(newMsg);
 		
 		//he gets msg from grovePi supposons 
 		 
