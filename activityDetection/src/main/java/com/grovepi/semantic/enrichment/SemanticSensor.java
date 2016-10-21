@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.sql.Timestamp;
 import java.util.Random;
 
 import org.eclipse.rdf4j.model.IRI;
@@ -38,6 +39,8 @@ public class SemanticSensor {
 	String dulNamespace = "http://www.loa-cnr.it/ontologies/DUL.owl#";
 	File file = new File("ssn.owl");
 	Model model;
+	Model sensorOutputModel;
+	java.util.Date date;
 	
 	public SemanticSensor(String type, String name, String property, 
 			String foi, String classification) {
@@ -46,6 +49,7 @@ public class SemanticSensor {
 		this.property = property;
 		this.foi = foi;
 		this.classification = classification;
+		date = new java.util.Date();
 	}
 
 	public void addSensorToOntology() throws FileNotFoundException{
@@ -80,9 +84,9 @@ public class SemanticSensor {
 			 conn.add(sensorInd, observes, PropertyInd);
 			 			   
 			 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
-			 model = QueryResults.asModel(statements);			
+			 model = QueryResults.asModel(statements);
 			 conn.close();
-			 Rio.write(model, System.out, RDFFormat.TURTLE);
+			// Rio.write(model, System.out, RDFFormat.TURTLE);
 			 saveModel(model);
 		 } catch (Exception e){
 			 System.out.println(e);
@@ -101,6 +105,7 @@ public class SemanticSensor {
 		
 		//IRI object properties I have to add the classification
 		IRI hasDataValue = f.createIRI(dulNamespace+ "hasDataValue");
+		IRI hasDatetime = f.createIRI(dulNamespace+ "hasDatetime");
 		IRI observedProperty = f.createIRI(ssnNamespace+ "observedProperty");
 		IRI observedBy = f.createIRI(ssnNamespace+ "observedBy");
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
@@ -118,7 +123,7 @@ public class SemanticSensor {
 		//IRI foiInd = f.createIRI(ssnNamespace, "activity");
 		
 		Literal val = f.createLiteral(value);
-		
+		Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
 		//he gets msg from grovePi supposons 
 		 
 		 try (RepositoryConnection conn = rep.getConnection()) {
@@ -126,6 +131,7 @@ public class SemanticSensor {
 			 
 			 conn.add(sensorOutputInd, RDF.TYPE, sensorOutput);
 			 conn.add(sensorOutputInd, hasDataValue, val);
+			 conn.add(sensorOutputInd, hasDatetime, datetime);
 			 
 			 conn.add(observationInd, RDF.TYPE, observation);
 			 conn.add(observationInd, observedProperty, PropertyInd);
@@ -133,15 +139,24 @@ public class SemanticSensor {
 			 conn.add(observationInd, featureOfInterest, foiInd);
 			 conn.add(observationInd, observationResult, sensorOutputInd);			   
 			 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
-			 model = QueryResults.asModel(statements);			
+			 model = QueryResults.asModel(statements);
+			 
+			 RepositoryResult<Statement> sensorOutputStatements = conn.getStatements(sensorOutputInd, hasDataValue, val);
+			 //sensorOutputStatements.
+			 sensorOutputModel = QueryResults.asModel(sensorOutputStatements);
+			 
 			 conn.close();
-			 Rio.write(model, System.out, RDFFormat.TURTLE);
-			 saveModel(model);
+		//	 Rio.write(model, System.out, RDFFormat.TURTLE);
+		//	 saveModel(model);
 		 } catch (Exception e){
 			 System.out.println(e);
 		 }		
 	}
-	
+	public Model getSensorOutput(){
+		//System.out.println(sensorOutputModel);
+		return sensorOutputModel;
+		
+	}
 	public void saveModel(Model model) throws FileNotFoundException{
 		OutputStream output = new FileOutputStream("ssn.owl");
 		RDFWriter rdfWriter = Rio.createWriter(RDFFormat.RDFXML,output);

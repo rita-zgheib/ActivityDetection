@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.sql.Timestamp;
+import java.util.Random;
 
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
@@ -36,6 +38,8 @@ public class VirtualSemanticSensor {
 
 	File file = new File("ApplicationOntology.owl");
 	Model model;
+	java.util.Date date;
+	Model sensorOutputModel;
 		
 	public VirtualSemanticSensor(String type, String name, String property, 
 			String foi, String classification) {
@@ -44,6 +48,7 @@ public class VirtualSemanticSensor {
 		this.property = property;
 		this.foi = foi;
 		this.classification = classification;
+		date = new java.util.Date();
 	}
 	public void addSensorToOntology() throws FileNotFoundException{
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
@@ -57,13 +62,13 @@ public class VirtualSemanticSensor {
 		IRI Classification = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#Classification");
 		
 		//IRI object properties I have to add the classification
-		IRI observes = f.createIRI(ssnNamespace, "observes");
+		IRI observes = f.createIRI(ssnNamespace + "observes");
 		
 		//IRI individuals
-		IRI PropertyInd = f.createIRI(ssnNamespace, property);
-		IRI foiInd = f.createIRI(ssnNamespace, foi );
-		IRI sensorInd = f.createIRI(ssnNamespace, name );
-		IRI classInd = f.createIRI(ssnNamespace, classification );
+		IRI PropertyInd = f.createIRI(ssnNamespace+ property);
+		IRI foiInd = f.createIRI(ssnNamespace+ foi );
+		IRI sensorInd = f.createIRI(ssnNamespace+ name );
+		IRI classInd = f.createIRI(ssnNamespace+ classification );
 		
 		 
 		 try (RepositoryConnection conn = rep.getConnection()) {
@@ -77,36 +82,42 @@ public class VirtualSemanticSensor {
 			 conn.add(sensorInd, observes, PropertyInd);
 			 			   
 			 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
-			 model = QueryResults.asModel(statements);			
+			 model = QueryResults.asModel(statements);
 			 conn.close();
-			 Rio.write(model, System.out, RDFFormat.TURTLE);
+			// Rio.write(model, System.out, RDFFormat.TURTLE);
 			 saveModel(model);
 		 } catch (Exception e){
 			 System.out.println(e);
 		 }		
 	}
 	
-	public void addObservation(String topic,String newMsg) throws FileNotFoundException{
+	public void addObservation(String newMsg) throws FileNotFoundException{
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		rep.initialize();
-		ValueFactory f = rep.getValueFactory();		
+		ValueFactory f = rep.getValueFactory();
+		Random rand = new Random();
+		
 		//IRI classes
 		IRI observation = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#Observation"); 
 		IRI sensorOutput = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#SensorOutput");
-
-		//IRI object properties
-		IRI hasDataValue = f.createIRI(dulNamespace, "hasDataValue");
-		IRI observedProperty = f.createIRI(ssnNamespace, "observedProperty");
-		IRI featureOfInterest = f.createIRI(ssnNamespace, "featureOfInterest");
-		IRI observationResult = f.createIRI(ssnNamespace, "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace, "pressureObservation5");
-		IRI sensorOutputInd = f.createIRI(ssnNamespace, "vibrationOutput3");
+		//IRI object properties I have to add the classification
+		IRI hasDataValue = f.createIRI(dulNamespace+ "hasDataValue");
+		IRI hasDatetime = f.createIRI(dulNamespace+ "hasDatetime");
+		IRI observedProperty = f.createIRI(ssnNamespace+ "observedProperty");
+		IRI observedBy = f.createIRI(ssnNamespace+ "observedBy");
+		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
+		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI PropertyInd = f.createIRI(ssnNamespace + topic );
-		IRI foiInd = f.createIRI(ssnNamespace + foi );
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt());
+		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "sensorOutput"+rand);
+		
+		IRI PropertyInd = f.createIRI(ssnNamespace + property );
+		IRI foiInd = f.createIRI(ssnNamespace+ foi);
+		IRI sensorInd = f.createIRI(ssnNamespace + name );
 		
 		Literal val = f.createLiteral(newMsg);
+		Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
 		
 		//he gets msg from grovePi supposons 
 		 
@@ -115,22 +126,31 @@ public class VirtualSemanticSensor {
 			 
 			 conn.add(sensorOutputInd, RDF.TYPE, sensorOutput);
 			 conn.add(sensorOutputInd, hasDataValue, val);
+			 conn.add(sensorOutputInd, hasDatetime, datetime);
 			 
 			 conn.add(observationInd, RDF.TYPE, observation);
 			 conn.add(observationInd, observedProperty, PropertyInd);
-
+			 conn.add(observationInd, observedBy, sensorInd);
 			 conn.add(observationInd, featureOfInterest, foiInd);
-			 conn.add(observationInd, observationResult, sensorOutputInd);			   
+			 conn.add(observationInd, observationResult, sensorOutputInd);
+			 
 			 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
-			 model = QueryResults.asModel(statements);			
+			 model = QueryResults.asModel(statements);	
+			 
+			 RepositoryResult<Statement> sensorOutputStatements = conn.getStatements(sensorOutputInd, hasDataValue, val);
+			 //sensorOutputStatements.
+			 sensorOutputModel = QueryResults.asModel(sensorOutputStatements);
 			 conn.close();
-			 Rio.write(model, System.out, RDFFormat.TURTLE);
+		//	 Rio.write(model, System.out, RDFFormat.TURTLE);
 			 saveModel(model);
 		 } catch (Exception e){
 			 System.out.println(e);
 		 }		
 	}
-	
+	public Model getSensorOutput(){
+		return sensorOutputModel;
+		
+	}
 	public void saveModel(Model model) throws FileNotFoundException{
 		OutputStream output = new FileOutputStream("ApplicationOntology.owl");
 		RDFWriter rdfWriter = Rio.createWriter(RDFFormat.RDFXML,output);

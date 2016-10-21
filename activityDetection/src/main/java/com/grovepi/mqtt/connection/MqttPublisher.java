@@ -17,7 +17,7 @@ public class MqttPublisher implements MqttCallback {
 	  private static final String BROKER_URL = "tcp://m2m.eclipse.org:1883";
 	 // private static final String BROKER_URL = "localhost:1883";
 	 // private static final String BROKER_URL = "192.168.10.8:1883";
-	  private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-pub";
+	 // private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-pub";
 	  
 	 // private static final String DEFAULT_TOPIC = "Activity/button";
 	  //private static final Logger LOG = LoggerFactory.getLogger(SemanticPublisher.class);
@@ -27,7 +27,7 @@ public class MqttPublisher implements MqttCallback {
 
 	  private static final int RETRIES = 3;
 	  
-	  public MqttPublisher() throws MqttException {
+	  public MqttPublisher(String MY_MQTT_CLIENT_ID) throws MqttException {
 		    myClient = new MqttClient(BROKER_URL, MY_MQTT_CLIENT_ID);
 		    myClient.setCallback(this);
 		    

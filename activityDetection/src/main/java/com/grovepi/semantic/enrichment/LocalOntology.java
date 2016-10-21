@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.sql.Timestamp;
+import java.util.Random;
 
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
@@ -23,6 +25,7 @@ import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.sail.inferencer.fc.ForwardChainingRDFSInferencer;
 import org.eclipse.rdf4j.sail.memory.MemoryStore;
 
+
 public abstract class LocalOntology {
 	
 	static String ssnNamespace = "http://purl.oclc.org/NET/ssnx/ssn#"; 
@@ -30,24 +33,29 @@ public abstract class LocalOntology {
 	static File file = new File("ApplicationOntology.owl");
 	static Model model;
 	
-	public static void updateOntology(String topic, String foi, String message) throws FileNotFoundException{
+	
+	public static void updateOntology(String topic, String foi, String sensorInd) throws FileNotFoundException{
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		rep.initialize();
-		ValueFactory f = rep.getValueFactory();		
-		System.out.println("entered updateOntology");
+		ValueFactory f = rep.getValueFactory();	
+		Random rand = new Random();
+		java.util.Date date;
+		date = new java.util.Date();
+		//System.out.println("entered updateOntology");
 		//IRI classes
 		IRI observation = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#Observation"); 
 		IRI sensorOutput = f.createIRI("http://purl.oclc.org/NET/ssnx/ssn#SensorOutput");
 		
 		//IRI object properties I have to add the classification
-		IRI hasDataValue = f.createIRI(dulNamespace+ "hasDataValue");
+		//IRI hasDataValue = f.createIRI(dulNamespace+ "hasDataValue");
+		IRI hasDatetime = f.createIRI(dulNamespace+ "hasDatetime");
 		IRI observedProperty = f.createIRI(ssnNamespace+ "observedProperty");
 
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
 		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace+ "pressureObservation3");
-		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "PressureOutput3");
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt());
+		IRI sensorOutputInd = f.createIRI(sensorInd);
 		
 		IRI PropertyInd = f.createIRI(ssnNamespace + topic );
 		IRI foiInd = f.createIRI(ssnNamespace+ foi);
@@ -57,14 +65,15 @@ public abstract class LocalOntology {
 		//IRI sensorInd = f.createIRI(ssnNamespace, "bedPressureSensor");
 		//IRI foiInd = f.createIRI(ssnNamespace, "activity");
 		
-		Literal val = f.createLiteral(message);
+		//Literal val = f.createLiteral(message);
+		Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
 		
 		//he gets msg from grovePi supposons 		 
 		 try (RepositoryConnection conn = rep.getConnection()) {
 			 conn.add(file,  ssnNamespace, RDFFormat.RDFXML);
 			 
 			 conn.add(sensorOutputInd, RDF.TYPE, sensorOutput);
-			 conn.add(sensorOutputInd, hasDataValue, val);
+			 conn.add(sensorOutputInd, hasDatetime, datetime);
 			 
 			 conn.add(observationInd, RDF.TYPE, observation);
 			 conn.add(observationInd, observedProperty, PropertyInd);
@@ -74,14 +83,14 @@ public abstract class LocalOntology {
 			 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
 			 model = QueryResults.asModel(statements);			
 			 conn.close();
-			 Rio.write(model, System.out, RDFFormat.TURTLE);
+			// Rio.write(model, System.out, RDFFormat.TURTLE);
 			 saveModel(model);
 			 
 		 } catch (Exception e){
 			 System.out.println(e);
 		 }		
 	}
-	
+
 	public static void saveModel(Model model) throws FileNotFoundException{
 		OutputStream output = new FileOutputStream("ApplicationOntology.owl");
 		RDFWriter rdfWriter = Rio.createWriter(RDFFormat.RDFXML,output);

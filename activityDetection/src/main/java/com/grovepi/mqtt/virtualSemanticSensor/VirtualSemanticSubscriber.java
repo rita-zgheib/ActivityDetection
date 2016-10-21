@@ -59,8 +59,6 @@ public class VirtualSemanticSubscriber implements MqttCallback {
 		client.subscribe(topic);
 		MqttMessage m = connectOptions.getWillMessage();
 	   // System.out.println("message is " + m.toString());
-
-	    //m.addToOntology() a ajouter
 	}
 
 	
@@ -72,14 +70,12 @@ public class VirtualSemanticSubscriber implements MqttCallback {
 	
 	public void messageArrived(String topic, MqttMessage message)
 	        throws Exception {
-	//	LocalOntology.updateOntology(topic, "activity", new String(message.getPayload()));
+		LocalOntology.updateOntology(topic, "activity", new String(message.getPayload()));
 		System.out.println("New message on topic: " + topic + " is: " + message);
 		System.out.println("-------------------------------------------------");
 		System.out.println("| Topic:" + topic);
 		System.out.println("| Message: " + new String(message.getPayload()));
 		System.out.println("-------------------------------------------------");
-	//	result.put(topic, message);
-	//	updateLocalOntology
 	}
 
 	public void deliveryComplete(IMqttDeliveryToken token) {
@@ -91,17 +87,12 @@ public class VirtualSemanticSubscriber implements MqttCallback {
 	    System.out.println("Disonnected from " + BROKER_URL);
 	    System.exit(0);
 	}
-
+/*
 	public static void main(String[] args) throws MqttException {
 		VirtualSemanticSubscriber app =  new VirtualSemanticSubscriber();
 		app.runClient();
 		String[] topics = new String[]{"personInBed","personUp","wardrobeOpened"};
 		app.subscribeTO(topics);
-		//app.subscribeTO("personInBed");
-		//app.subscribeTO("personUp");
-		//app.subscribeTO("wardrobeOpened");
 	}
-
-
-
+*/
 }

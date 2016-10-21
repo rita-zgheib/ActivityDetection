@@ -7,6 +7,8 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
+import com.grovepi.semantic.enrichment.LocalOntology;
+
 public class MqttSubscriber implements MqttCallback {
     MqttClient client;
     private MqttConnectOptions connectOptions;
@@ -14,7 +16,7 @@ public class MqttSubscriber implements MqttCallback {
     private static final String BROKER_URL = "tcp://m2m.eclipse.org:1883";
 	//private static final String BROKER_URL = "localhost:1883";
 	 // private static final String BROKER_URL = "192.168.10.8:1883";
-	private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-sub";
+	//private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-sub";
 	//private static final Logger LOG = LoggerFactory.getLogger(SemanticPublisher.class);
 	private static final boolean PUBLISHER = false;
 	private static final boolean SUBSCRIBER = true;
@@ -22,7 +24,7 @@ public class MqttSubscriber implements MqttCallback {
 	private static final int RETRIES = 3;
 	
 	
-	public MqttSubscriber() throws MqttException {
+	public MqttSubscriber(String MY_MQTT_CLIENT_ID) throws MqttException {
 		client = new MqttClient(BROKER_URL, MY_MQTT_CLIENT_ID);
 	    client.setCallback(this); 
 	}
@@ -61,12 +63,12 @@ public class MqttSubscriber implements MqttCallback {
 	
 	public void messageArrived(String topic, MqttMessage message)
 	        throws Exception {
+		//LocalOntology.updateOntology(topic, "activity", new String(message.getPayload()));
 		System.out.println("New message on topic: " + topic + "is: " + message);
 		System.out.println("-------------------------------------------------");
 		System.out.println("| Topic:" + topic);
 		System.out.println("| Message: " + new String(message.getPayload()));
 		System.out.println("-------------------------------------------------");
-	//	updateLocalOntology
 	}
 
 	public void deliveryComplete(IMqttDeliveryToken token) {

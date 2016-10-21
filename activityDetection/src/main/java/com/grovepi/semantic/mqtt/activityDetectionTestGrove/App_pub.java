@@ -15,7 +15,7 @@ public class App_pub
 	public static void main(String[] args) throws Exception {
 		String topic = "Activity/button"; 
 		groveButtonSensor button = new groveButtonSensor();	
-		MqttPublisher app = new MqttPublisher();
+		MqttPublisher app = new MqttPublisher("Rita-SemanticMQTT-pub");
 		String message = "ButtonPressed";
 		//To semantic
 		MqttMessage msg = new MqttMessage(message.getBytes());

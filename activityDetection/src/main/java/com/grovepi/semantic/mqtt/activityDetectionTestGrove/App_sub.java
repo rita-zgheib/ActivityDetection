@@ -11,7 +11,7 @@ import com.grovepi.mqtt.connection.MqttSubscriber;
 public class App_sub 
 {
 	public static void main(String[] args) throws MqttException {
-		MqttSubscriber app =  new MqttSubscriber();
+		MqttSubscriber app =  new MqttSubscriber("Rita-SemanticMQTT-sub");
 		app.runClient();
 	}
 }

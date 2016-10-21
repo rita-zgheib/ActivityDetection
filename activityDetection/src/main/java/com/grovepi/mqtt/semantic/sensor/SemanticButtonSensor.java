@@ -1,6 +1,7 @@
 package com.grovepi.mqtt.semantic.sensor;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.rdf4j.model.Model;
 import org.eclipse.rdf4j.query.BindingSet;
 
 import com.grovepi.mqtt.connection.MqttPublisher;
@@ -13,29 +14,27 @@ public class SemanticButtonSensor {
 		
 			SemanticSensor ButtonSensor = new SemanticSensor("ButtonSensor", 
 					"wardrobeButton1", "wardrobeOpened","activity",""	); 
-			ButtonSensor.addSensorToOntology();  
+			//ButtonSensor.addSensorToOntology();  
+			MqttPublisher app = new MqttPublisher("ButtonClient-Pub");
 			
 			// if the button = 0 means the wardrobe is opened
 			//connect to the grovePi and retrieve messages each 10 minutes 
-			int message = 0; //temporary message
-			int message1 = 1;
-			
-			//He creates a new observation for each message I need to make it dynamic
-			ButtonSensor.addObservation(message);
-			ButtonSensor.addObservation(message1);
-			
-			MqttPublisher app = new MqttPublisher();
+			//int message = 0; //temporary message
+			//int message1 = 1;
+						
 			//getting the message for a specific property
-			PublisherSparqlQuery query = new PublisherSparqlQuery("wardrobeOpened");
-			BindingSet result = query.runQuery();
-			//creating MQTT message
-			MqttMessage msg = new MqttMessage(result.toString().getBytes());
+			//PublisherSparqlQuery query = new PublisherSparqlQuery("wardrobeOpened");
+			//BindingSet result = query.runQuery();
 			app.runClient();
 			
-			for (int i = 0; i < 3; i++){
-			app.sendMessage("wardrobeOpened", msg.toString());			
+			for (int i = 0; i < 30; i++){
+				ButtonSensor.addObservation(i%2);
+				Model result = ButtonSensor.getSensorOutput();
+				MqttMessage msg = new MqttMessage(result.toString().getBytes());
+				//MqttMessage msg = new MqttMessage(" testButton".toString().getBytes());
+				app.sendMessage("wardrobeOpened", msg.toString());			
 	          		//System.out.print(button.isPressed() ? 1 : 0);	
-			Thread.sleep(200);
+			Thread.sleep(1000);
 		    }
 			 app.stopClient();
 		}
