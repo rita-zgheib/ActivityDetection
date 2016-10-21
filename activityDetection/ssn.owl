@@ -718,9 +718,9 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#has_sensorOutput_datetime -->
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasDatetime -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#has_sensorOutput_datetime">
+    <owl:DatatypeProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasDatetime">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>

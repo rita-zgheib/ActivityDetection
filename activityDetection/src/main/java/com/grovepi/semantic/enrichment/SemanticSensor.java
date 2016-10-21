@@ -89,7 +89,7 @@ public class SemanticSensor {
 		 }		
 	}
 		
-	public void addObservation(String value) throws FileNotFoundException{
+	public void addObservation(int value) throws FileNotFoundException{
 		Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		rep.initialize();
 		ValueFactory f = rep.getValueFactory();		

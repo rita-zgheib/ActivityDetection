@@ -11,17 +11,19 @@ public class SemanticButtonSensor {
 	
 	public static void main(String[] args) throws Exception {
 		
-		/*	SemanticSensor ButtonSensor = new SemanticSensor("ButtonSensor", 
+			SemanticSensor ButtonSensor = new SemanticSensor("ButtonSensor", 
 					"wardrobeButton1", "wardrobeOpened","activity",""	); 
 			ButtonSensor.addSensorToOntology();  
-					
+			
+			// if the button = 0 means the wardrobe is opened
 			//connect to the grovePi and retrieve messages each 10 minutes 
-			String message = "wardrobe is open"; //temporary message
-			String message1 = "wardrobe is not open";
+			int message = 0; //temporary message
+			int message1 = 1;
+			
 			//He creates a new observation for each message I need to make it dynamic
 			ButtonSensor.addObservation(message);
 			ButtonSensor.addObservation(message1);
-			*/
+			
 			MqttPublisher app = new MqttPublisher();
 			//getting the message for a specific property
 			PublisherSparqlQuery query = new PublisherSparqlQuery("wardrobeOpened");
