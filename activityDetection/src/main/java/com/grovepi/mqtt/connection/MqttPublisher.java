@@ -21,7 +21,7 @@ public class MqttPublisher implements MqttCallback {
 	  
 	 // private static final String DEFAULT_TOPIC = "Activity/button";
 	  //private static final Logger LOG = LoggerFactory.getLogger(SemanticPublisher.class);
-	  private String sensorTopic;
+	 // private String sensorTopic;
 	  private static final boolean PUBLISHER = true;
 	  private static final boolean SUBSCRIBER = false;
 

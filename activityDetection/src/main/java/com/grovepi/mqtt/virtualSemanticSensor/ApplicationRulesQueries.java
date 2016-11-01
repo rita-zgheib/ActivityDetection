@@ -25,8 +25,8 @@ public class ApplicationRulesQueries {
 	
 	
 	public ApplicationRulesQueries(){
-					
-	wearinClothesQuery = " SELECT ?pressureValue ?buttonValue ?vibrationValue ?pressuretime WHERE { "
+	//wearinClothesQuery = " SELECT ?pressureValue ?buttonValue ?vibrationValue ?pressuretime WHERE { "				
+	wearinClothesQuery = " SELECT ?pressuretime WHERE { "
 			   + "?pressureOutput <"
 		       + DUL
 		       +"hasDataValue> ?pressureValue . "
@@ -114,9 +114,10 @@ public class ApplicationRulesQueries {
 			}
 		return bindingSet;
 	}
+/*	
 	public static void main(String[] args){
 		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries();
 		BindingSet res = wearingClothes.runQuery();
 	}
-
+*/
 }

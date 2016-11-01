@@ -14,7 +14,7 @@ public class SemanticVibrationSensor {
 		
 			SemanticSensor vibrationSensor = new SemanticSensor("VibrationSensor", 
 					"floorVibSensor1", "personUp","activity",""	); 
-		//	vibrationSensor.addSensorToOntology();  
+			vibrationSensor.addSensorToOntology();  
 			MqttPublisher app = new MqttPublisher("VibrationClient-Pub");
 			//vibration > 30 means the person is in front of his bed
 			//connect to the grovePi and retrieve messages each 10 minutes 

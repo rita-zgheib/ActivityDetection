@@ -14,7 +14,7 @@ public class SemanticBedPressureSensor {
 		
 		SemanticSensor pressureSensor = new SemanticSensor("PressureSensor", 
 				"BedPressureSensor1", "personInBed","activity",""	); 
-	//	pressureSensor.addSensorToOntology();  
+		pressureSensor.addSensorToOntology();  
 		MqttPublisher app = new MqttPublisher("PressureClient-Pub");		
 		//connect to the grovePi and retrieve messages each 10 minutes 
 		//int message = 20; //temporary message

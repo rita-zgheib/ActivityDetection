@@ -14,7 +14,7 @@ public class SemanticButtonSensor {
 		
 			SemanticSensor ButtonSensor = new SemanticSensor("ButtonSensor", 
 					"wardrobeButton1", "wardrobeOpened","activity",""	); 
-			//ButtonSensor.addSensorToOntology();  
+			ButtonSensor.addSensorToOntology();  
 			MqttPublisher app = new MqttPublisher("ButtonClient-Pub");
 			
 			// if the button = 0 means the wardrobe is opened

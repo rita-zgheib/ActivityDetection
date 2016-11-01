@@ -109,8 +109,8 @@ public class VirtualSemanticSensor {
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
 		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt());
-		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "sensorOutput"+rand);
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt(30000));
+		IRI sensorOutputInd = f.createIRI(ssnNamespace+ "sensorOutput"+rand.nextInt());
 		
 		IRI PropertyInd = f.createIRI(ssnNamespace + property );
 		IRI foiInd = f.createIRI(ssnNamespace+ foi);

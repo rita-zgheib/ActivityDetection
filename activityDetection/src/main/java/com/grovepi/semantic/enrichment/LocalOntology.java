@@ -54,7 +54,7 @@ public abstract class LocalOntology {
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
 		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt());
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt(30000));
 		IRI sensorOutputInd = f.createIRI(sensorInd);
 		
 		IRI PropertyInd = f.createIRI(ssnNamespace + topic );
