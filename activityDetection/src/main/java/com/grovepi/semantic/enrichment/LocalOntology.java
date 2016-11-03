@@ -48,13 +48,13 @@ public abstract class LocalOntology {
 		
 		//IRI object properties I have to add the classification
 		//IRI hasDataValue = f.createIRI(dulNamespace+ "hasDataValue");
-		IRI hasDatetime = f.createIRI(dulNamespace+ "hasDatetime");
+		IRI hasDatetime = f.createIRI(ssnNamespace+ "hasDatetime");
 		IRI observedProperty = f.createIRI(ssnNamespace+ "observedProperty");
 
 		IRI featureOfInterest = f.createIRI(ssnNamespace+ "featureOfInterest");
 		IRI observationResult = f.createIRI(ssnNamespace+ "observationResult");
 		
-		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt(30000));
+		IRI observationInd = f.createIRI(ssnNamespace+ "observation"+rand.nextInt(50));
 		IRI sensorOutputInd = f.createIRI(sensorInd);
 		
 		IRI PropertyInd = f.createIRI(ssnNamespace + topic );

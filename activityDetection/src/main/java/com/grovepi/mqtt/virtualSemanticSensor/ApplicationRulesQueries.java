@@ -114,10 +114,10 @@ public class ApplicationRulesQueries {
 			}
 		return bindingSet;
 	}
-/*	
+	
 	public static void main(String[] args){
 		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries();
 		BindingSet res = wearingClothes.runQuery();
 	}
-*/
+
 }

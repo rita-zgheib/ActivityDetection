@@ -20,7 +20,7 @@ public class PublisherSparqlQuery {
 	
 	File intput = new File("ssn.owl");
 	String ssnURI = "http://purl.oclc.org/NET/ssnx/ssn#";
-	String DUL = "http://www.loa-cnr.it/ontologies/DUL.owl#";
+	String DUL = "http://www.loa.istc.cnr.it/ontologies/DUL.owl#";
 	
 	String queryString;
 	

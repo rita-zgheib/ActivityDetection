@@ -27,7 +27,7 @@ public class WearingClothes_App {
 		
 		for (;;){
 			if(SUBSCRIBER){
-				app.subscribeTO(topics);
+				app.subscribeTO(topics); // include updating application ontology addObservations to local Ontology
 				Thread.sleep(30000);
 				PUBLISHER = true;
 			}
