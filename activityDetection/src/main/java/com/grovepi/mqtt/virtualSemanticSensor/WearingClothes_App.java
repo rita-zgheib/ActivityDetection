@@ -31,7 +31,7 @@ public class WearingClothes_App {
 				Thread.sleep(30000);
 				PUBLISHER = true;
 			}
-			
+			/*
 			if(PUBLISHER){
 				SUBSCRIBER = false;	
 				//for (int i = 0; i < 5; i++){			
@@ -45,11 +45,10 @@ public class WearingClothes_App {
 		         		//System.out.print(button.isPressed() ? 1 : 0);	
 				}
 				Thread.sleep(1000);
-				SUBSCRIBER = true;
-		    
+				SUBSCRIBER = true;		    
 			// app.stopClient();
+			}*/
 		}
-		}
-
+	
 	}
 }

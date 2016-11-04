@@ -8,6 +8,9 @@ import org.eclipse.paho.client.mqttv3.MqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttTopic;
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.impl.LinkedHashModel;
+import org.eclipse.rdf4j.model.util.RDFCollections;
 
 import com.grovepi.semantic.enrichment.LocalOntology;
 
@@ -16,6 +19,7 @@ public class MqttPublisherSubscriber implements MqttCallback {
 	  private MqttConnectOptions connectOptions;
 
 	  private static final String BROKER_URL = "tcp://m2m.eclipse.org:1883";
+	  String baseURI = "http://purl.oclc.org/NET/ssnx/ssn";
 	 // private static final String BROKER_URL = "localhost:1883";
 	 // private static final String BROKER_URL = "192.168.10.8:1883";
 	 // private static final String MY_MQTT_CLIENT_ID = "Rita-SemanticMQTT-subPub";
@@ -60,6 +64,7 @@ public class MqttPublisherSubscriber implements MqttCallback {
 	  
 	 public void messageArrived(String topic, MqttMessage message) throws Exception {
 		 	// I update the ontology with the received sensors data
+		    
 		 	LocalOntology.updateOntology(topic, "activity", message.toString());
 		 	System.out.println("Recieved Message :: -----------------------------");
 		    System.out.println("| Topic:" + topic);

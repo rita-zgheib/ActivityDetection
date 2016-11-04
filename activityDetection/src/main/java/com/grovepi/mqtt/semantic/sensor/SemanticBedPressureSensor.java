@@ -27,10 +27,12 @@ public class SemanticBedPressureSensor {
 		
 		app.runClient();
 		
-		for (int i = 0; i < 30; i++){
+		for (int i = 0; i < 40; i++){
 			 pressureSensor.addObservation(i*10);
 			 Model result = pressureSensor.getSensorOutput();
-			 MqttMessage msg = new MqttMessage(result.toString().getBytes());
+			 String resultat = result.toString();
+			 String res = resultat.substring(2, resultat.length()-2);
+			 MqttMessage msg = new MqttMessage(res.toString().getBytes());
 			 //MqttMessage msg = new MqttMessage("testBed".toString().getBytes());
 			 app.sendMessage("personInBed", msg.toString());			
           		//System.out.print(button.isPressed() ? 1 : 0);	

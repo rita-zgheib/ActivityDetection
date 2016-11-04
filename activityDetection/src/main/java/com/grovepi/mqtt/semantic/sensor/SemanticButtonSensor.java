@@ -30,7 +30,9 @@ public class SemanticButtonSensor {
 			for (int i = 0; i < 30; i++){
 				ButtonSensor.addObservation(i%2);
 				Model result = ButtonSensor.getSensorOutput();
-				MqttMessage msg = new MqttMessage(result.toString().getBytes());
+				String resultat = result.toString();
+				String res = resultat.substring(2, resultat.length()-2);
+				MqttMessage msg = new MqttMessage(res.toString().getBytes());
 				//MqttMessage msg = new MqttMessage(" testButton".toString().getBytes());
 				app.sendMessage("wardrobeOpened", msg.toString());			
 	          		//System.out.print(button.isPressed() ? 1 : 0);	

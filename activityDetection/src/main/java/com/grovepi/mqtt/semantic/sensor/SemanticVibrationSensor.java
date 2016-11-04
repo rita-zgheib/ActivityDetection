@@ -32,8 +32,11 @@ public class SemanticVibrationSensor {
 			for (int i = 0; i < 30; i++){
 				vibrationSensor.addObservation(i*10);
 				Model result = vibrationSensor.getSensorOutput();
-				MqttMessage msg = new MqttMessage(result.toString().getBytes());
+				String resultat = result.toString();
+				String res = resultat.substring(2, resultat.length()-2);
+				MqttMessage msg = new MqttMessage(res.getBytes());
 				//MqttMessage msg = new MqttMessage("vibrationsTest".toString().getBytes());
+				//String msgToSend = msg.toString().substring(2, int(length(msg.toString()-2));
 				app.sendMessage("personUp", msg.toString());			
 		          		//System.out.print(button.isPressed() ? 1 : 0);	
 				Thread.sleep(1000);

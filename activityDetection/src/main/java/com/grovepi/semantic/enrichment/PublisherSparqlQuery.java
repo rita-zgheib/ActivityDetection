@@ -20,9 +20,16 @@ public class PublisherSparqlQuery {
 	
 	File intput = new File("ssn.owl");
 	String ssnURI = "http://purl.oclc.org/NET/ssnx/ssn#";
-	String DUL = "http://www.loa.istc.cnr.it/ontologies/DUL.owl#";
-	
+	//String DUL = "http://www.loa.istc.cnr.it/ontologies/DUL.owl#";
+	String DUL = "http://www.loa-cnr.it/ontologies/DUL.owl#";
 	String queryString;
+	
+	public PublisherSparqlQuery(){
+		queryString = " SELECT ?property WHERE { "
+			       + "?sensors <"
+			       + ssnURI
+			       + "observes> ?property } ";
+	}
 	
 	public PublisherSparqlQuery(String property){
 					
@@ -79,5 +86,9 @@ public class PublisherSparqlQuery {
 			}
 		return bindingSet;
 	}
-
+	
+	public static void main(String[] args){
+		PublisherSparqlQuery wearingClothes = new PublisherSparqlQuery();
+		BindingSet res = wearingClothes.runQuery();
+	}
 }

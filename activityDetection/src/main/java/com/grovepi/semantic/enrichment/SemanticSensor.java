@@ -6,15 +6,21 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.sql.Timestamp;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 
 import org.eclipse.rdf4j.RDF4JException;
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
 import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.Resource;
 import org.eclipse.rdf4j.model.Statement;
 import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.impl.LinkedHashModel;
+import org.eclipse.rdf4j.model.util.RDFCollections;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.query.QueryResults;
 import org.eclipse.rdf4j.repository.Repository;
@@ -96,8 +102,7 @@ public class SemanticSensor {
 			 RepositoryConnection conn = rep.getConnection();
 			 try {
 				 conn.add(file, baseURI, format);
-				// URL url = new URL("ssn.owl");
-			    // conn.add(url, url.toString(), RDFFormat.RDFXML);
+			    // conn.add(file, ssnNamespace, RDFFormat.RDFXML);
 				 
 				 conn.add(sensorInd, RDF.TYPE, Sensor);
 				 conn.add(PropertyInd, RDF.TYPE, Property);
@@ -118,8 +123,7 @@ public class SemanticSensor {
 		 }catch (RDF4JException e) {
 			   // handle exception
 			 System.out.println(e);
-		 } 
-		 catch (Exception e){
+		 }catch (Exception e){
 			 System.out.println(e);
 		 }		
 	}
@@ -154,7 +158,8 @@ public class SemanticSensor {
 		//IRI foiInd = f.createIRI(ssnNamespace, "activity");
 		
 		Literal val = f.createLiteral(value);
-		Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
+		//Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
+		Literal datetime = f.createLiteral(getDatetime());
 		//he gets msg from grovePi supposons 
 		 
 		 try  {
@@ -175,8 +180,13 @@ public class SemanticSensor {
 				 RepositoryResult<Statement> statements = conn.getStatements(null, null, null);
 				 model = QueryResults.asModel(statements);
 				 
-				 RepositoryResult<Statement> sensorOutputStatements = conn.getStatements(sensorOutputInd, hasDataValue, val);
-				 //sensorOutputStatements.
+				 //List<Literal> values = Arrays.asList(new Literal[] { val, datetime });
+				 //HashMap<IRI,List<Literal>> output = new HashMap<IRI,List<Literal>>();
+				 //output.put(sensorOutputInd, values);
+				// Resource head = f.createBNode();
+				// sensorOutputModel = RDFCollections.asRDF(values, head, new LinkedHashModel());
+				 RepositoryResult<Statement> sensorOutputStatements = conn.getStatements(sensorOutputInd, null, null);
+				 
 				 sensorOutputModel = QueryResults.asModel(sensorOutputStatements);
 			 
 			 }finally {
@@ -210,6 +220,19 @@ public class SemanticSensor {
 			catch (RDFHandlerException e) {
 			 // oh no, do something!
 			}		
+	}
+	public Timestamp getDatetime(){
+		java.util.Date date = new java.util.Date();
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		 
+		// Set time fields to zero
+		cal.set(Calendar.MILLISECOND, 0);	 
+		// Put it back in the Date object
+		date = cal.getTime();		
+		Timestamp timestamp = new Timestamp(date.getTime());
+		return(timestamp);
+		
 	}
 	
 /*	
