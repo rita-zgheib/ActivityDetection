@@ -23,70 +23,41 @@ public class ApplicationRulesQueries {
 	String queryString;
 	String wearinClothesQuery;
 	
-	public ApplicationRulesQueries(String x){
-	/*	wearinClothesQuery = " SELECT ?property WHERE { "
-			       + "?sensors <"
+	public ApplicationRulesQueries(){
+		wearinClothesQuery = " SELECT ?pressuretime WHERE { "
+				   + "?pressureOutput <"
+			       + DUL
+			       +"hasDataValue> ?pressureValue . "
+			       + "?pressobservation <"
 			       + ssnURI
-			       + "observes> ?property } ";
-		
-		wearinClothesQuery =" SELECT ?pressuretime ?buttontime ?vibrationtime WHERE { "
-		   + "?pressureOutput <"
-		   + DUL
-		   +"hasDataValue> ?pressureValue . "
-		   + "?pressobservation <"
-	       + ssnURI
-	       + "observationResult> ?pressureOutput ."
-	       + "?pressobservation <"
-	       + ssnURI
-	       + "observedProperty> ?pressureproperty  ."
-	       + "?pressureOutput <"
-	       + ssnURI
-	       + "hasDatetime> ?pressuretime ."
-	       + "filter regex(str(?pressureproperty), \"personInBed\") . "
-	      // + "filter (?pressureValue < 30) "
-	       + "?buttonOutput <"
-	       + DUL
-	       +"hasDataValue> ?buttonValue . "
-	       + "?buttonobservation <"
-	       + ssnURI
-	       + "observationResult> ?buttonOutput ."
-	       + "?buttonobservation <"
-	       + ssnURI
-	       + "observedProperty> ?buttonproperty  ."
-	       + "?buttonOutput <"
-	       + ssnURI
-	       + "hasDatetime> ?buttontime ."
-	       + "filter regex(str(?buttonproperty), \"wardrobeOpened\")."
-	       
-	       + "?vibrationOutput <"
-	       + DUL
-	       +"hasDataValue> ?vibrationValue . "
-	       + "?vibrationobservation <"
-	       + ssnURI
-	       + "observationResult> ?vibrationOutput ."
-	       + "?vibrationobservation <"
-	       + ssnURI
-	       + "observedProperty> ?vibrationproperty  ."
-	       + "?vibrationOutput <"
-	       + ssnURI
-	       + "hasDatetime> ?vibrationtime ."
-	       + "filter regex(str(?vibrationproperty), \"personUp\")."
-	       //+ "filter regex(str(?buttontime), str(?vibrationtime))."
-	      // + "filter regex(str(?buttontime), str(?pressuretime)) . "
-	       + "}";
-		*/
-		wearinClothesQuery =" SELECT ?buttontime ?vibrationtime WHERE { "
-				   + "?buttonobservation <"
+			       + "observationResult> ?pressureOutput ."
+			       + "?pressobservation <"
+			       + ssnURI
+			       + "observedProperty> ?pressureproperty  ."
+			       + "?pressureOutput <"
+			       + ssnURI
+			       + "hasDatetime> ?pressuretime ."
+			       + "filter regex(str(?pressureproperty), \"personInBed\")."
+			       + "filter (?pressureValue < 30) ."
+			       //
+			       + "?buttonOutput <"
+			       + DUL
+			       +"hasDataValue> ?buttonValue . "
+			       + "?buttonobservation <"
 			       + ssnURI
 			       + "observationResult> ?buttonOutput ."
-				   + "?buttonobservation <"
+			       + "?buttonobservation <"
 			       + ssnURI
 			       + "observedProperty> ?buttonproperty  ."
 			       + "?buttonOutput <"
 			       + ssnURI
 			       + "hasDatetime> ?buttontime ."
 			       + "filter regex(str(?buttonproperty), \"wardrobeOpened\")."
-			       			       
+			       + "filter (?buttonValue = 0) ."
+			       //
+			       + "?vibrationOutput <"
+			       + DUL
+			       +"hasDataValue> ?vibrationValue . "
 			       + "?vibrationobservation <"
 			       + ssnURI
 			       + "observationResult> ?vibrationOutput ."
@@ -97,60 +68,13 @@ public class ApplicationRulesQueries {
 			       + ssnURI
 			       + "hasDatetime> ?vibrationtime ."
 			       + "filter regex(str(?vibrationproperty), \"personUp\")."
-			       //+ "filter regex(str(?buttontime), str(?vibrationtime))."
-			      // + "filter regex(str(?buttontime), str(?pressuretime)) . "
+			       + "filter (?vibrationValue > 30) ."
+			       + "filter (?buttontime = ?vibrationtime)."
+			       + "filter (?buttontime = ?pressuretime) . "
 			       + "}";
-	}
-	public ApplicationRulesQueries(){
-	//wearinClothesQuery = " SELECT ?pressureValue ?buttonValue ?vibrationValue ?pressuretime WHERE { "				
-	wearinClothesQuery = " SELECT ?pressuretime WHERE { "
-			   + "?pressureOutput <"
-		       + DUL
-		       +"hasDataValue> ?pressureValue . "
-		       + "?pressobservation <"
-		       + ssnURI
-		       + "observationResult> ?pressureOutput ."
-		       + "?pressobservation <"
-		       + ssnURI
-		       + "observedProperty> ?pressureproperty  ."
-		       + "?pressureOutput <"
-		       + ssnURI
-		       + "hasDatetime> ?pressuretime ."
-		       + "filter regex(str(?pressureproperty), \"personInBed\")."
-		      // + "filter (?pressureValue < 30) ."
-		       //
-		       + "?buttonOutput <"
-		       + DUL
-		       +"hasDataValue> ?buttonValue . "
-		       + "?buttonobservation <"
-		       + ssnURI
-		       + "observationResult> ?buttonOutput ."
-		       + "?buttonobservation <"
-		       + ssnURI
-		       + "observedProperty> ?buttonproperty  ."
-		       + "?buttonOutput <"
-		       + ssnURI
-		       + "hasDatetime> ?buttontime ."
-		       + "filter regex(str(?buttonproperty), \"wardrobeOpened\")."
-		      // + "filter (?buttonValue = 0) ."
-		       //
-		       + "?vibrationOutput <"
-		       + DUL
-		       +"hasDataValue> ?vibrationValue . "
-		       + "?vibrationobservation <"
-		       + ssnURI
-		       + "observationResult> ?vibrationOutput ."
-		       + "?vibrationobservation <"
-		       + ssnURI
-		       + "observedProperty> ?vibrationproperty  ."
-		       + "?vibrationOutput <"
-		       + ssnURI
-		       + "hasDatetime> ?vibrationtime ."
-		       + "filter regex(str(?vibrationproperty), \"personUp\")."
-		      // + "filter (?vibrationValue > 30) ."
-		       + "filter regex(str(?buttontime), str(?vibrationtime))."
-		       + "filter regex(str(?buttontime), str(?pressuretime))"
-		       + "}";
+		// + "filter regex(str(?buttontime), str(?vibrationtime))."
+	      // + "filter regex(str(?buttontime), str(?pressuretime))"
+		
 	}
 	
 	public BindingSet runQuery(){
@@ -191,12 +115,12 @@ public class ApplicationRulesQueries {
 			}
 		return bindingSet;
 	}
-	
+	/*
 	public static void main(String[] args){
 
-		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries("test");
+		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries();
 		BindingSet res = wearingClothes.runQuery();
 
 	}
-
+*/
 }

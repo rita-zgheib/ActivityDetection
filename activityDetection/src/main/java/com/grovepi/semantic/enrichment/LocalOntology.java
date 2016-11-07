@@ -76,7 +76,9 @@ public abstract class LocalOntology {
 		IRI observationInd = f.createIRI(ssnNamespace+ topic+"observation"+rand.nextInt(50));
 		//IRI sensorOutputInd = f.createIRI(sensorInd);
 		IRI sensorOutputInd = f.createIRI(ssnNamespace+ topic+"sensorOutput"+rand.nextInt(50));
+		
 		//Date d;
+		
 		String[] words = null;
 		for (int i = 0; i <sensorInd.length() ; i++){
 			words =  sensorInd.split(",");			
@@ -84,7 +86,7 @@ public abstract class LocalOntology {
 		int index = words[5].lastIndexOf("\"");
 		int value = Integer.parseInt(words[5].substring(2, index));
 		
-		System.out.println("words are: " + words[10] );
+		//System.out.println("words are: " + words[10] );
 		//Resource sensorOutputInd = f.createIRI(sensorInd);
 		//System.out.println("output saved to Local ontology is: " + sensorOutputInd );
 		

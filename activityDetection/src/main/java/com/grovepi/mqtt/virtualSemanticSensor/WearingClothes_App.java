@@ -31,7 +31,7 @@ public class WearingClothes_App {
 				Thread.sleep(30000);
 				PUBLISHER = true;
 			}
-			/*
+			
 			if(PUBLISHER){
 				SUBSCRIBER = false;	
 				//for (int i = 0; i < 5; i++){			
@@ -47,7 +47,7 @@ public class WearingClothes_App {
 				Thread.sleep(1000);
 				SUBSCRIBER = true;		    
 			// app.stopClient();
-			}*/
+			}
 		}
 	
 	}
