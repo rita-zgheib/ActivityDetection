@@ -1,4 +1,4 @@
-package com.grovepi.semantic.mqtt.activityDetectionTestGrove;
+package usefulClasses;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
 

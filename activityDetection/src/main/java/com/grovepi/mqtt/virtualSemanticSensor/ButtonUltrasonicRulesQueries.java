@@ -15,7 +15,7 @@ import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.sail.inferencer.fc.ForwardChainingRDFSInferencer;
 import org.eclipse.rdf4j.sail.memory.MemoryStore;
 
-public class ApplicationRulesQueries {
+public class ButtonUltrasonicRulesQueries {
 	File intput = new File("ApplicationOntology.owl");
 	String ssnURI = "http://purl.oclc.org/NET/ssnx/ssn#";
 	String DUL = "http://www.loa-cnr.it/ontologies/DUL.owl#";
@@ -23,23 +23,8 @@ public class ApplicationRulesQueries {
 	String queryString;
 	String wearinClothesQuery;
 	
-	public ApplicationRulesQueries(){
-		wearinClothesQuery = " SELECT ?forcetime WHERE { "
-				   + "?forceOutput <"
-			       + DUL
-			       +"hasDataValue> ?forceValue . "
-			       + "?pressobservation <"
-			       + ssnURI
-			       + "observationResult> ?forceOutput ."
-			       + "?pressobservation <"
-			       + ssnURI
-			       + "observedProperty> ?forceproperty  ."
-			       + "?forceOutput <"
-			       + ssnURI
-			       + "hasDatetime> ?forcetime ."
-			       + "filter regex(str(?forceproperty), \"personInBed\")."
-			       + "filter (?forceValue < 5) ."
-			       //
+	public ButtonUltrasonicRulesQueries(){
+		wearinClothesQuery = " SELECT ?buttontime WHERE { "
 			       + "?buttonOutput <"
 			       + DUL
 			       +"hasDataValue> ?buttonValue . "
@@ -55,25 +40,25 @@ public class ApplicationRulesQueries {
 			       + "filter regex(str(?buttonproperty), \"wardrobeOpened\")."
 			       + "filter (?buttonValue = 0) ."
 			       //
-			       + "?ultrasonicOutput <"
+			       + "?vibrationOutput <"
 			       + DUL
-			       +"hasDataValue> ?ultrasonicValue . "
-			       + "?ultrasonicObservation <"
+			       +"hasDataValue> ?vibrationValue . "
+			       + "?vibrationobservation <"
 			       + ssnURI
-			       + "observationResult> ?ultrasonicOutput ."
-			       + "?ultrasonicObservation <"
+			       + "observationResult> ?vibrationOutput ."
+			       + "?vibrationobservation <"
 			       + ssnURI
-			       + "observedProperty> ?ultrasonicProperty  ."
-			       + "?ultrasonicOutput <"
+			       + "observedProperty> ?vibrationproperty  ."
+			       + "?vibrationOutput <"
 			       + ssnURI
-			       + "hasDatetime> ?ultrasonicTime ."
-			       + "filter regex(str(?ultrasonicProperty), \"personUp\")."
-			       + "filter (?ultrasonicValue < 20) ."
-			       + "filter (?buttontime = ?ultrasonicTime)."
-			       + "filter (?buttontime = ?forcetime) . "
+			       + "hasDatetime> ?vibrationtime ."
+			       + "filter regex(str(?vibrationproperty), \"personUp\")."
+			       + "filter (?vibrationValue > 30) ."
+			       + "filter (?buttontime = ?vibrationtime)."
+			     //  + "filter (?buttontime = ?pressuretime) . "
 			       + "}";
 		// + "filter regex(str(?buttontime), str(?vibrationtime))."
-	      // + "filter regex(str(?buttontime), str(?forcetime))"
+	      // + "filter regex(str(?buttontime), str(?pressuretime))"
 		
 	}
 	
@@ -115,10 +100,10 @@ public class ApplicationRulesQueries {
 			}
 		return bindingSet;
 	}
-	/*
+/*	
 	public static void main(String[] args){
 
-		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries();
+		ButtonUltrasonicRulesQueries wearingClothes = new ButtonUltrasonicRulesQueries();
 		BindingSet res = wearingClothes.runQuery();
 
 	}

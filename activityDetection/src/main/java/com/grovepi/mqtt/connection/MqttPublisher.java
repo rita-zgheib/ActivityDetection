@@ -41,10 +41,11 @@ public class MqttPublisher implements MqttCallback {
 	  public void deliveryComplete(IMqttDeliveryToken token) {
 		// TODO Auto-generated method stub
 		 System.out.println("Devliery completed with token ::");
-		 System.out.println("Message Id :: " + token.getMessageId());
+		// System.out.println("Message Id :: " + token.getMessageId());
 		// System.out.println("Response :: " + token.getResponse().toString());
 		try {
-			System.out.println("Pub complete" + new String(token.getMessage().getPayload()));
+			//System.out.println("Pub complete" + new String(token.getMessage().getPayload()));
+			System.out.println("Pub complete for message: " + new String(token.getMessage().getPayload()));
 		} catch (MqttException e) {
 		// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -102,7 +103,7 @@ public class MqttPublisher implements MqttCallback {
 
 		    if (null != token) {
 		      System.out.println("Message for topic :: " + mqttTopic);
-		      System.out.println("Published with Token :: " +token);
+		      //System.out.println("Published with Token :: " +token);
 		      //System.out.println("Message id is: "+token.getMessageId());
 		      System.out.println("Message is: "+mqttMessage.toString());
 		    }

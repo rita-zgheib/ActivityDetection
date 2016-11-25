@@ -1,9 +1,11 @@
-package com.grovepi.semantic.mqtt.activityDetectionTestGrove;
+package usefulClasses;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import com.grovepi.mqtt.connection.MqttPublisher;
 import com.grovepi.physical.sensors.jgrove.groveButtonSensor;
+
+import grovepi.Pin;
 
 
 /**
@@ -14,7 +16,7 @@ public class App_pub
 {
 	public static void main(String[] args) throws Exception {
 		String topic = "Activity/button"; 
-		groveButtonSensor button = new groveButtonSensor();	
+		groveButtonSensor button = new groveButtonSensor(Pin.DIGITAL_PIN_4);	
 		MqttPublisher app = new MqttPublisher("Rita-SemanticMQTT-pub");
 		String message = "ButtonPressed";
 		//To semantic

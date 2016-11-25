@@ -1,4 +1,4 @@
-package com.grovepi.mqtt.semantic.sensor;
+package com.grovepi.mqtt.sensorsSimulation;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.rdf4j.model.Model;

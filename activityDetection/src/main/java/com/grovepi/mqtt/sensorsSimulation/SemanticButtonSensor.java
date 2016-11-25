@@ -1,4 +1,4 @@
-package com.grovepi.mqtt.semantic.sensor;
+package com.grovepi.mqtt.sensorsSimulation;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.rdf4j.model.Model;
@@ -36,7 +36,7 @@ public class SemanticButtonSensor {
 				//MqttMessage msg = new MqttMessage(" testButton".toString().getBytes());
 				app.sendMessage("wardrobeOpened", msg.toString());			
 	          		//System.out.print(button.isPressed() ? 1 : 0);	
-			Thread.sleep(1000);
+			    Thread.sleep(1000);
 		    }
 			 app.stopClient();
 		}

@@ -2,344 +2,344 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-04E1A455A0CC0AF3BDFF1D16F3C4DA44">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-0A9762BABA4859B07A56DE0C105F4661">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-08F7EBBEBA04C7B47FAE876812A90D7E">
-	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-0A17570299BE346E7F60E52EB568AE33">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
-	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-0C425DA7F111AA23189A634C44F00D30">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-0C5FF068738F044D49B170168840A1BE">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-162FE5C0FA8448CDEFFA74ADCC515AEF">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-1B72228C48A35320D4CC8AF87DC1EEE1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<unionOf xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-1C1C8D061515EB4F70A897A30E1441BE"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-1C1C8D061515EB4F70A897A30E1441BE">
-	<rdf:first rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-	<rdf:rest rdf:nodeID="genid-913bdc4682be465999860217d47985df-CD6647AE7FE4C53E24295F15E43C354E"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-22A338FB74F5D15002757EB6419E0D01">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-2A81EEF2F3B0738FAEA120CE14C9DDA6">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-2ABB28135B6F89E2512450687E681AA6">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<minQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minQualifiedCardinality>
-	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorInput"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#interprets"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-43167E5217692FD853FFD8ABE4F75406">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-4B3F249D0D1AE1C8C4738E62B067EC38">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<minCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minCardinality>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-4C9E5D9D00F920F3ED645C57E3CD1B78">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-52DAD085412743E4975C3D54D01E5A11">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-5C320B104DA4E1B943D7966C7F61551C">
-	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-5E9E24157D12810DDD5C28F070C53462">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<minCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minCardinality>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-5F2CF440DE72F508491BC9870653EF00">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-60637E0045A60C14F72CD43F887C91AE">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-62540D9DEB14F0EE9438702919D90803">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-725B23708F0A702F5284EA7D2E654F28">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-108F01237723EE86EEAE513B72CDAEB8">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
 	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Output"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-7860F85E4384E103F1A6DFA86045EC6B">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"/>
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-174D23D8EED63976CC6324AFADE76105">
+	<rdf:first rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+	<rdf:rest rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-E50736D184B2E3012B276BB1C4023AF1"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-7F50B81BE88B727097EAB1D0CEFBD0F5">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1938B13A83F9F974DBE7D25A915E8CB4">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
-	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-809B1FEC9707AE7CAE4855CADE5EC348">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1CE764114E356DE9CD4E4FF8F75282FD">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasInput"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-82007D510A62C8F29668D49AF9B0658F">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1D3AEAE94DBC283BE845F9618D92447B">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-863E4BADEA6F9AC0DD99AB9F2E0F752D">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-8D25F1E1AD8DE5EC59983DE216B3386A">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1E04068D954B74D298F0FE8C2D315FFA">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inDeployment"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-97FC7AC280053C967AC4DC14F598B9C2">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-9839DEB057CE8297EB58BBF67079DD18">
-	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
-	<rdf:rest rdf:nodeID="genid-913bdc4682be465999860217d47985df-5C320B104DA4E1B943D7966C7F61551C"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-9C58029CA87CF15FF76CAF5E06D9D140">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-A0AA3EB7CBDFC2016F4AF1E4AD112585">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1EEBF44A9A9D9EB128EEA2CC0DEA2196">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-A27DE3476A278B370DA6CA3C9477C7FB">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1FFE8A75FC8D25195347D2C47B444F8E">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-222416AC367D890FF2551536871CD114">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-A6FCB2822F7931CD5E8137BC45DF88C0">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-23F2CD46D0A630028FCFE14BD5377A29">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-24F7FAE27BDB05C16250574A92E3E03C">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-28C4DAAFD358D486CD06CAD0954F96B2">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
 	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-AB7B9F01A5A38C71FCD4048A749DAA3C">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-2EF60A1F30115CEA4B53C6663091D994">
+	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-325B3770EE7A553FFC1979386FC56225">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-32B21FEB133606E89F23FE929A342E91">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"/>
 	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-B06CB8DD6344D5C3AD08A93686D8053D">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-B08428485CDBFE03BCF08C479317FED8">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-B0DDB4083B3162011E0662BCD599FFAD">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasInput"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-C021D22CB4CA9F31BF122B4265E1D9AF">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-C254430318D639CB84618EFD39DDE028">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-C405D5F2CB7BE29EEBB4DE3800E13697">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-C53C6ACB390F6B9F6647A15FC3151AC5">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-CBA4D1192D7A32735E7407999B0D7A1D">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-CC6A7B99D1451178B238EA760BC3ABFB">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-CC8D40F01266BF279DC1A097FB2A6B36">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-CD6647AE7FE4C53E24295F15E43C354E">
-	<rdf:first rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-D05EFDC305BB4087D2BC7AE7FDC02D75">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProxyFor"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-D35B88671FA709189A2CB7B2D91546A1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-D4623E2A18A4D1EC7A928962EB1B83D5">
-	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
-	<rdf:rest rdf:nodeID="genid-913bdc4682be465999860217d47985df-08F7EBBEBA04C7B47FAE876812A90D7E"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-DCDD9989D4F385ED22C943DA89B52F1F">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-33462468EE13DADBE27044964AA3B7B5">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<minCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minCardinality>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResultTime"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-DF2C6597C8B2748425C0FDDC91DB1501">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-356889CED0F6FED00F9926F856373E86">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProxyFor"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-E0F634772BFA34400887F468BE8820C7">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-3F28FA95BA6150CF0338F245A3644D65">
+	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
+	<rdf:rest rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-2EF60A1F30115CEA4B53C6663091D994"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-E4F555AAC834909AFBD65E01ADA1B20E">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-41B76695DAD71288BE7EDF6311BA0248">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-421A834540BBC31F1015591B5EE823C5">
+	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-4B8CDFD4D5225833F35F888A293B74CF">
+	<rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+	<rdf:rest rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-421A834540BBC31F1015591B5EE823C5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5395E41BAAE01DA47A4AD295ACA809B5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5649CAD32BBC5C51CC8EBB1EF6D0B60B">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-565A8418BC51C4823B269B4C448F330E">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5CFC9F76F74D34B715F838CA27B9D427">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-EE7F18321817C02CA412E3A94F7463D2">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-62CAF158EB5AC6C001C236205DE2ABBB">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-66019B3E8613E6F78BF68B5F63EFA062">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Output"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-721C29015DD0B9EEE07BF1D3C1DBB3EF">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-75CB80705376015BAE5CD18AB796878E">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7690EC41F22B3142CA8D310247563086">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-78C376CA9991F20C19CFEB88E095F7B0">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7B6506A824106935E920D2A8DEEDE3E5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7D6B866C48D2D995D941B2BF7783F091">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8847CA3624AC856788001485CA91BA3D">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minCardinality>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8B39758646131B0DCAA8FB8CFF08C3AD">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minQualifiedCardinality>
+	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorInput"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#interprets"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8EDB5836D0ABA2251A6B20BE72E00E48">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
 	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-F55C21E4FE2C80A8AB04BB82DBB52651">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-96224A44DACD4ED0CAE3A88AE15159E3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-9770733DDFEB98CA09908765D7128DD1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<unionOf xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-174D23D8EED63976CC6324AFADE76105"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-9A8D941052CFB9F68D226B7DE8388F5B">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-A21DC95AE1C6B98582366A1689BF8EC7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-AB4D4501019092F99EB36BED12CAA150">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-AB7B1D2BFA3611ABDEC6E6E845E5829A">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
 	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-FA17101AFCE222B0F8C9D16243A3E6DF">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-B085F9AE239D75973C62646ACC149609">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
-	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-FC44AA7D7FAAF730B02AD29088ECC860">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-BE82372F66C49C383FF8C8E16383C968">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:nodeID="genid-913bdc4682be465999860217d47985df-FC7AE872C191F5ABFD62876B9D64F8CC">
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-BF2A5EBE98FBD819F5A67A153A9E6721">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Output"/>
-	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+	<onClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+	<qualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-C3A1EC253DF1C27E905F1E3E873105FD">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CB3CD64E5C62A88836C87BE68F14E1C8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CC62BDCF740C8CBB6AF87B7470DFC3F8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CCAD408FBFAFAED4CA7257FAE1A822E6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CEF2E981C6DD5C9E38820260FA446359">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minCardinality>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-DDE95DB3F2E1E5A373E07A13FE951132">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-DE4EDBDF39DB78666FE9C7A44BA41AA5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-E50736D184B2E3012B276BB1C4023AF1">
+	<rdf:first rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-F4146A07347FA6948EEF6FCF6B0AA6F0">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-F59BA5B78569F90A438D8F5D6EA212AB">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-FA3ED46DD9078C855A0873B405DFBC93">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://creativecommons.org/ns#license">
@@ -409,7 +409,7 @@
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-2ABB28135B6F89E2512450687E681AA6"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8B39758646131B0DCAA8FB8CFF08C3AD"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
 </rdf:Description>
 
@@ -430,8 +430,8 @@
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deployment</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-162FE5C0FA8448CDEFFA74ADCC515AEF"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-A0AA3EB7CBDFC2016F4AF1E4AD112585"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1EEBF44A9A9D9EB128EEA2CC0DEA2196"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-62CAF158EB5AC6C001C236205DE2ABBB"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess"/>
 </rdf:Description>
 
@@ -442,7 +442,7 @@
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deployment-related Process</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-7860F85E4384E103F1A6DFA86045EC6B"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-23F2CD46D0A630028FCFE14BD5377A29"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Process"/>
 </rdf:Description>
 
@@ -487,9 +487,9 @@
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature of Interest</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-1B72228C48A35320D4CC8AF87DC1EEE1"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-D35B88671FA709189A2CB7B2D91546A1"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-F55C21E4FE2C80A8AB04BB82DBB52651"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1FFE8A75FC8D25195347D2C47B444F8E"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-9770733DDFEB98CA09908765D7128DD1"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-AB7B1D2BFA3611ABDEC6E6E845E5829A"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </rdf:Description>
 
@@ -550,9 +550,9 @@ The conditions specified here are those that affect the measurement properties, 
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement Capability</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-52DAD085412743E4975C3D54D01E5A11"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-A27DE3476A278B370DA6CA3C9477C7FB"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-C254430318D639CB84618EFD39DDE028"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-222416AC367D890FF2551536871CD114"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-BE82372F66C49C383FF8C8E16383C968"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-DDE95DB3F2E1E5A373E07A13FE951132"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
 </rdf:Description>
 
@@ -593,19 +593,19 @@ Measurement result in VIM is the measured value plus any other relevant informat
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-04E1A455A0CC0AF3BDFF1D16F3C4DA44"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-0A17570299BE346E7F60E52EB568AE33"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-4B3F249D0D1AE1C8C4738E62B067EC38"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-5E9E24157D12810DDD5C28F070C53462"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-5F2CF440DE72F508491BC9870653EF00"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-60637E0045A60C14F72CD43F887C91AE"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-7F50B81BE88B727097EAB1D0CEFBD0F5"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-AB7B9F01A5A38C71FCD4048A749DAA3C"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-B08428485CDBFE03BCF08C479317FED8"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-C021D22CB4CA9F31BF122B4265E1D9AF"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-CC6A7B99D1451178B238EA760BC3ABFB"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-DCDD9989D4F385ED22C943DA89B52F1F"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-EE7F18321817C02CA412E3A94F7463D2"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1D3AEAE94DBC283BE845F9618D92447B"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-325B3770EE7A553FFC1979386FC56225"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-32B21FEB133606E89F23FE929A342E91"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-33462468EE13DADBE27044964AA3B7B5"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7B6506A824106935E920D2A8DEEDE3E5"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8847CA3624AC856788001485CA91BA3D"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-8EDB5836D0ABA2251A6B20BE72E00E48"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-BF2A5EBE98FBD819F5A67A153A9E6721"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CB3CD64E5C62A88836C87BE68F14E1C8"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CEF2E981C6DD5C9E38820260FA446359"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-F4146A07347FA6948EEF6FCF6B0AA6F0"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-F59BA5B78569F90A438D8F5D6EA212AB"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-FA3ED46DD9078C855A0873B405DFBC93"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
 </rdf:Description>
 
@@ -625,7 +625,7 @@ O&amp;M conflates what we have as SensorOutput and ObservationValue into observa
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation Value</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Base#Data</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-CC8D40F01266BF279DC1A097FB2A6B36"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5395E41BAAE01DA47A4AD295ACA809B5"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
 </rdf:Description>
 
@@ -657,8 +657,8 @@ The difference is that here we also allow for qualities that aren't VIM influenc
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Range</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-22A338FB74F5D15002757EB6419E0D01"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-863E4BADEA6F9AC0DD99AB9F2E0F752D"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-A21DC95AE1C6B98582366A1689BF8EC7"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-B085F9AE239D75973C62646ACC149609"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
 </rdf:Description>
 
@@ -679,8 +679,8 @@ The difference is that here we also allow for qualities that aren't VIM influenc
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platform</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#PlatformSite</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-8D25F1E1AD8DE5EC59983DE216B3386A"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-9C58029CA87CF15FF76CAF5E06D9D140"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1E04068D954B74D298F0FE8C2D315FFA"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CCAD408FBFAFAED4CA7257FAE1A822E6"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
 </rdf:Description>
 
@@ -707,9 +707,9 @@ The difference is that here we also allow for qualities that aren't VIM influenc
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Model#Process</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-725B23708F0A702F5284EA7D2E654F28"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-B0DDB4083B3162011E0662BCD599FFAD"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-FC7AE872C191F5ABFD62876B9D64F8CC"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-108F01237723EE86EEAE513B72CDAEB8"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1CE764114E356DE9CD4E4FF8F75282FD"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-66019B3E8613E6F78BF68B5F63EFA062"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Method"/>
 </rdf:Description>
 
@@ -721,7 +721,7 @@ The difference is that here we also allow for qualities that aren't VIM influenc
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-C53C6ACB390F6B9F6647A15FC3151AC5"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-721C29015DD0B9EEE07BF1D3C1DBB3EF"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
 </rdf:Description>
 
@@ -803,10 +803,10 @@ O&amp;M allows sensors, methods, instruments, systems, algorithms and process ch
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-4C9E5D9D00F920F3ED645C57E3CD1B78"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-62540D9DEB14F0EE9438702919D90803"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-82007D510A62C8F29668D49AF9B0658F"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-FC44AA7D7FAAF730B02AD29088ECC860"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-41B76695DAD71288BE7EDF6311BA0248"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-75CB80705376015BAE5CD18AB796878E"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7690EC41F22B3142CA8D310247563086"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-7D6B866C48D2D995D941B2BF7783F091"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
 </rdf:Description>
 
@@ -829,7 +829,7 @@ Generally a sensor's properties are recorded directly (with hasMeasurementCapabi
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor Input</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-D05EFDC305BB4087D2BC7AE7FDC02D75"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-356889CED0F6FED00F9926F856373E86"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
 	<equivalentClass xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
 </rdf:Description>
@@ -846,8 +846,8 @@ See comments at ObservationValue.</source>
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor Output</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-0C425DA7F111AA23189A634C44F00D30"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-CBA4D1192D7A32735E7407999B0D7A1D"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-1938B13A83F9F974DBE7D25A915E8CB4"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-24F7FAE27BDB05C16250574A92E3E03C"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
 </rdf:Description>
 
@@ -878,8 +878,8 @@ See comments at ObservationValue.</source>
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Range</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-43167E5217692FD853FFD8ABE4F75406"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-E4F555AAC834909AFBD65E01ADA1B20E"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5CFC9F76F74D34B715F838CA27B9D427"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-DE4EDBDF39DB78666FE9C7A44BA41AA5"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
 </rdf:Description>
 
@@ -890,12 +890,12 @@ See comments at ObservationValue.</source>
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Model#System</seeAlso>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-2A81EEF2F3B0738FAEA120CE14C9DDA6"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-97FC7AC280053C967AC4DC14F598B9C2"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-B06CB8DD6344D5C3AD08A93686D8053D"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-C405D5F2CB7BE29EEBB4DE3800E13697"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-DF2C6597C8B2748425C0FDDC91DB1501"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-FA17101AFCE222B0F8C9D16243A3E6DF"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-0A9762BABA4859B07A56DE0C105F4661"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-5649CAD32BBC5C51CC8EBB1EF6D0B60B"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-96224A44DACD4ED0CAE3A88AE15159E3"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-AB4D4501019092F99EB36BED12CAA150"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-C3A1EC253DF1C27E905F1E3E873105FD"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-CC62BDCF740C8CBB6AF87B7470DFC3F8"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
 </rdf:Description>
 
@@ -920,10 +920,10 @@ See comments at ObservationValue.</source>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensor">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-0C5FF068738F044D49B170168840A1BE"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-809B1FEC9707AE7CAE4855CADE5EC348"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-A6FCB2822F7931CD5E8137BC45DF88C0"/>
-	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-E0F634772BFA34400887F468BE8820C7"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-28C4DAAFD358D486CD06CAD0954F96B2"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-565A8418BC51C4823B269B4C448F330E"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-78C376CA9991F20C19CFEB88E095F7B0"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-9A8D941052CFB9F68D226B7DE8388F5B"/>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
 </rdf:Description>
 
@@ -1260,8 +1260,8 @@ Note that, given the DUL modelling of Qualities, a sensor defined with 'observes
 	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</isDefinedBy>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">observes</label>
 	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#Measuring</seeAlso>
-	<propertyChainAxiom xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-9839DEB057CE8297EB58BBF67079DD18"/>
-	<propertyChainAxiom xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-913bdc4682be465999860217d47985df-D4623E2A18A4D1EC7A928962EB1B83D5"/>
+	<propertyChainAxiom xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-3F28FA95BA6150CF0338F245A3644D65"/>
+	<propertyChainAxiom xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="genid-4c9d88e063e14ab8864130887929a53c-4B8CDFD4D5225833F35F888A293B74CF"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ofFeature">
@@ -1281,730 +1281,76 @@ Note that, given the DUL modelling of Qualities, a sensor defined with 'observes
 	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation1">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput21"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput6"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation10">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput2"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation11">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput37"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation13">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput26"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation15">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput34"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation18">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput35"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput9"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation20">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput34"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation21">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput17"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput40"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation22">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput17"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation23">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput28"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation26">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput42"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation27">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput13"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation29">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput30"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation3">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput17"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput19"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput40"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation31">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput17"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation32">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput21"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation34">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput11"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation36">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput43"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation37">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput22"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation38">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput20"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation39">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput16"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation40">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput38"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation43">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput1"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput11"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation44">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput12"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput3"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation45">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput9"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation46">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput5"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation47">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput12"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation49">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput13"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput21"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput23"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation6">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput10"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput1">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:14.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput10">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:08.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput11">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:06.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:15.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput12">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:31.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:42.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">230</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput13">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:05.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:33.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput16">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:41.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput17">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:04.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:11.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:21.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:39.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput19">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:09.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput2">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:12.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput20">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:19.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput21">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:10.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:38.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:44.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">280</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput22">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:40.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput23">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:35.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput26">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:28.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">210</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput28">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:24.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput3">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:23.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput30">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:47.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">370</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput34">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:20.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:32.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput35">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:45.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">360</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput37">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:27.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput38">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:25.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput40">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:18.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:48.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">380</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput42">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:34.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput43">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:43.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">230</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput5">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:36.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">280</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput6">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:26.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput9">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:16.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:17.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:29.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation1">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput24"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation12">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput35"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput37"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput6"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation13">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput33"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation14">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput8"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation17">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput22"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation18">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput0"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput39"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation2">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput39"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation20">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput16"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput35"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation22">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput1"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation27">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput12"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation28">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput7"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation29">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput40"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation3">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput3"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation30">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput33"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation33">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput16"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation37">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput43"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation39">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput43"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation4">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput17"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation40">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput25"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation44">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput42"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation49">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
 	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput29"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation7">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation14">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput4"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput44"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput24"/>
+	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
+	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation16">
+	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput36"/>
+	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
+	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation18">
+	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput7"/>
+	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
+	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation28">
+	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput1"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation8">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput20"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput41"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput36"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation9">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput12"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput0">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:20.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput1">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:11.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput12">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:17.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:34.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">220</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput16">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:31.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:33.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">210</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput17">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:37.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput20">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:39.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput22">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:23.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</hasDataValue>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:17.000+01:00</hasDatetime>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput24">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:38.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput25">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:15.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</hasDataValue>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:08:47.000+01:00</hasDatetime>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput29">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:42.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">290</hasDataValue>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:08:51.000+01:00</hasDatetime>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput3">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:10.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput33">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:22.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:29.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput35">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:13.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:26.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput37">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:41.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">280</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput39">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:14.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:28.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput4">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:18.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput40">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:30.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput41">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:40.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput42">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:24.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput43">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:25.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:32.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput44">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:09.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput6">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:16.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</hasDataValue>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput36">
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:09:20.000+01:00</hasDatetime>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:09:25.000+01:00</hasDatetime>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput7">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:35.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput8">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:21.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</hasDataValue>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:22.000+01:00</hasDatetime>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
@@ -2039,310 +1385,79 @@ Note that, given the DUL modelling of Qualities, a sensor defined with 'observes
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation0">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput41"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation1">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput49"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation10">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput17"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation13">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput22"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation16">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput13"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation18">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput35"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation19">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput14"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput35"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput40"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput44"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation20">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput38"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation21">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput8"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation23">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput49"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation24">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput15"/>
 	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput47"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation27">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation26">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput46"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput11"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation3">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation43">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput31"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation31">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput17"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput27"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation33">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput43"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation34">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput1"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput12"/>
 	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput34"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput43"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput45"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation36">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput27"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation37">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput28"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation41">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput26"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation42">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation7">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
 	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput20"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation49">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation9">
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput40"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput24"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput5"/>
 	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedobservation6">
-	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput26"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpened"/>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput1">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:10.000+01:00</hasDatetime>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput11">
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:17.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput13">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:23.000+01:00</hasDatetime>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput12">
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:09:20.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput14">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:07.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput15">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:26.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput17">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:19.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:40.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput20">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:27.000+01:00</hasDatetime>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:26.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput22">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:35.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput26">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:09.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:33.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput27">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:21.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:36.000+01:00</hasDatetime>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput24">
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:08:51.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput28">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:34.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput31">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:37.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput34">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:13.000+01:00</hasDatetime>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:09:25.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput35">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:17.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:22.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput38">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:25.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput40">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:24.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:32.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput41">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:15.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput43">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:11.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:12.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput44">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:39.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput45">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:30.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput46">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:29.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput47">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:18.000+01:00</hasDatetime>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:22.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput49">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:16.000+01:00</hasDatetime>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:31.000+01:00</hasDatetime>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasDataValue>
-	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput8">
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:06.000+01:00</hasDatetime>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpenedsensorOutput5">
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:08:47.000+01:00</hasDatetime>
 	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasDataValue>
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
 </rdf:Description>
@@ -2499,16 +1614,17 @@ Note that, given the DUL modelling of Qualities, a sensor defined with 'observes
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput42">
-	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</hasDataValue>
-	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-07T18:15:49.000+01:00</hasDatetime>
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput22">
+	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+	<hasDataValue xmlns="http://www.loa-cnr.it/ontologies/DUL.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">44</hasDataValue>
+	<hasDatetime xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-18T10:10:26.000+01:00</hasDatetime>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personInBedobservation19">
+<rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#personUpobservation23">
 	<rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBed"/>
+	<observedProperty xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUp"/>
 	<featureOfInterest xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#activity"/>
-	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personInBedsensorOutput42"/>
+	<observationResult xmlns="http://purl.oclc.org/NET/ssnx/ssn#" rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#personUpsensorOutput22"/>
 </rdf:Description>
 
 </rdf:RDF>

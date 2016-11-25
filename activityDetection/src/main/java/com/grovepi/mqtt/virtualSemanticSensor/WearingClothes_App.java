@@ -28,20 +28,21 @@ public class WearingClothes_App {
 		for (;;){
 			if(SUBSCRIBER){
 				app.subscribeTO(topics); // include updating application ontology addObservations to local Ontology
-				Thread.sleep(30000);
+				Thread.sleep(20000);
 				PUBLISHER = true;
 			}
 			
 			if(PUBLISHER){
 				SUBSCRIBER = false;	
 				//for (int i = 0; i < 5; i++){			
-				ApplicationRulesQueries wearingClothesquery = new ApplicationRulesQueries();
+				//ApplicationRulesQueries wearingClothesquery = new ApplicationRulesQueries();
+				ButtonUltrasonicRulesQueries wearingClothesquery = new ButtonUltrasonicRulesQueries();
 				BindingSet res = wearingClothesquery.runQuery();				
 				if (res != null){
 					activity = "Wearing his clothes at time: " + res.toString();
 					wearingClothes.addObservation(activity);
 					MqttMessage msg = new MqttMessage(activity.getBytes());
-					app.sendMessage("activity", msg.toString());			
+					app.sendMessage("behaviour", msg.toString());			
 		         		//System.out.print(button.isPressed() ? 1 : 0);	
 				}
 				Thread.sleep(1000);
