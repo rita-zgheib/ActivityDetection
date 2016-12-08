@@ -152,13 +152,13 @@ public class ApplicationRulesQueries {
 		return bindingSet;
 	}
 	}
-/*	
+	
 	public static void main(String[] args) throws RDFParseException, RepositoryException, IOException{
 		
 		ApplicationRulesQueries wearingClothes = new ApplicationRulesQueries();	
 		BindingSet res = wearingClothes.runQuery("dressing");
 
-	}*/
+	}
 
 }
 

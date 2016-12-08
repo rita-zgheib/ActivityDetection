@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.oclc.org/NET/ssnx/ssn#"
-     xml:base="http://purl.oclc.org/NET/ssnx/ssn"
+<rdf:RDF xmlns="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#"
+     xml:base="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN"
      xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:CoSSN="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,7 +13,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#">
-    <owl:Ontology rdf:about="http://purl.oclc.org/NET/ssnx/ssn">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN">
         <owl:imports rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W3C Semantic Sensor Network Incubator Group</dc:creator>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Please report any errors to the Semantic Sensor Network Incubator Activity via the public W3C list public-xg-ssn@w3.org</rdfs:comment>
@@ -724,11 +725,22 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasDatetime -->
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#SPARQLrule -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasDatetime">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#SPARQLrule">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DressingUpCognitiveSensing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#hasDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#hasDateTime">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensorOutput"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
@@ -742,94 +754,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsDressingUpProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsDressingUpProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActivityProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsOnTheBedProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsOnTheBedProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsOpeningTheWardrobeProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsOpeningTheWardrobeProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsTakingShower -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsTakingShower">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActivityProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsUPProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsUPProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#APersonIsWalkingInTheRoomProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#APersonIsWalkingInTheRoomProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Dressing_Up -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Dressing_Up">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_On_The_Bed -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_On_The_Bed">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Opening_The_Wardrobe -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Opening_The_Wardrobe">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Up -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Up">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Walking_In_The_Room -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#A_Person_Is_Walking_In_The_Room">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Activity"/>
-    </owl:Class>
     
 
 
@@ -847,54 +771,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#Action -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Action">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Sensor_Input"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ActionDetectionsensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ActionDetectionsensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ActionProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ActionProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#Activity -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Activity">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Sensor_Input"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ActivityDetectionSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ActivityDetectionSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ActivityProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ActivityProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime -->
 
     <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime">
@@ -903,70 +779,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
         <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:label>Battery Lifetime</rdfs:label>
         <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#BedsoreRiskSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#BedsoreRiskSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ButtonProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ButtonProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ButtonSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ButtonSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensorOutput -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensorOutput">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensorOutput"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Sensor_Input -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Sensor_Input">
-        <owl:equivalentClass rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus"/>
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#interprets"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorInput"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1024,22 +836,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
         <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:label>Deployment-related Process</rdfs:label>
         <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#DetectedAction -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#DetectedAction">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensorOutput"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#DetectedActivity -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#DetectedActivity">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#CognitiveSensorOutput"/>
     </owl:Class>
     
 
@@ -1120,22 +916,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ForceProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ForceProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ForceSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ForceSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.oclc.org/NET/ssnx/ssn#Frequency -->
 
     <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Frequency">
@@ -1144,22 +924,6 @@ Note that, given the DUL modelling of Qualities, a sensor defined with &apos;obs
         <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:label>Frequency</rdfs:label>
         <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#HumidityProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#HumidityProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#HumiditySensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#HumiditySensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
     </owl:Class>
     
 
@@ -1503,22 +1267,6 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#PressureProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#PressureProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#PressureSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#PressureSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.oclc.org/NET/ssnx/ssn#Process -->
 
     <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Process">
@@ -1761,14 +1509,6 @@ See comments at ObservationValue.</dc:source>
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#ShowerSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ShowerSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionDetectionsensor"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.oclc.org/NET/ssnx/ssn#Stimulus -->
 
     <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Stimulus">
@@ -1881,110 +1621,6 @@ See comments at ObservationValue.</dc:source>
     
 
 
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#TemperatureProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#TemperatureProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#TemperatureSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#TemperatureSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#UltrasonicRangerProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#UltrasonicRangerProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#UltrasonicRangerSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#UltrasonicRangerSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#VibrationProperty -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#VibrationProperty">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#VibrationSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#VibrationSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#VirtualSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensor">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
-                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Cognitive_Stimulus"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
-                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
-                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
-                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#VirtualSensorOutput -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#VirtualSensorOutput">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#WaterSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#WaterSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/NET/ssnx/ssn#WearingSensor -->
-
-    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#WearingSensor">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ActionDetectionsensor"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
@@ -2042,6 +1678,840 @@ See comments at ObservationValue.</dc:source>
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Situation -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsDressingUpProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsDressingUpProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOnTheBedProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOnTheBedProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOpeningTheWardrobeProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOpeningTheWardrobeProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsTakingShower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsTakingShower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsUPProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsUPProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsWalkingInTheRoomProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsWalkingInTheRoomProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Dressing_Up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Dressing_Up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_On_The_Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_On_The_Bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Opening_The_Wardrobe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Opening_The_Wardrobe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Walking_In_The_Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#A_Person_Is_Walking_In_The_Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Sensor_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionDetectionsensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionDetectionsensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Sensor_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityDetectionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityDetectionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#BedsoreRiskSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#BedsoreRiskSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonOutput">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ButtonProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensing">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Sensor_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Sensor_Input">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Stimulus"/>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Stimulus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Stimulus">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#interprets"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorInput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DetectedAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DetectedAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DetectedActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DetectedActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DressingUpCognitiveSensing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DressingUpCognitiveSensing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceOutput">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ForceProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#HumidityProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#HumidityProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#HumiditySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#HumidityProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#IsDressingUpSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#IsDressingUpSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActivityDetectionSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsDressingUpProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomActionDetectionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomActionDetectionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionDetectionsensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsWalkingInTheRoomProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomActionDetectionSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsWalkingInTheRoomProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpActionDetectionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpActionDetectionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionDetectionsensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsUPProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpActionDetectionSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsUPProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PressureProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PressureProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PressureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PressureSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PressureProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#TemperatureProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#TemperatureProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#TemperatureProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicOutput">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#UltrasonicRangerProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VibrationProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VibrationProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VibrationSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VibrationSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VibrationProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensor">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#Cognitive_Stimulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
+                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensorOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#VirtualSensorOutput">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WardrobeOpeningActionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WardrobeOpeningActionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#ActionDetectionsensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOpeningTheWardrobeProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterOutput">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WaterSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wardobeOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wardobeOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#CognitiveSensorOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wordrobeOpeningObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wordrobeOpeningObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wardobeOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#WardrobeOpeningActionSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#APersonIsOpeningTheWardrobeProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#DressingUpStringRule -->
+
+    <owl:NamedIndividual rdf:about="http://purl.oclc.org/NET/ssnx/ssn#DressingUpStringRule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#DressingUpCognitiveSensing"/>
+        <SPARQLrule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PREFIX ssn: &lt;http://purl.oclc.org/NET/ssnx/ssn#&gt;
+PREFIX DUL: &lt;http://www.loa-cnr.it/ontologies/DUL.owl#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+SELECT  ?pressuretime ?wardrobetime ?uptime
+	WHERE { ?sensorOutput  DUL:hasDataValue ?dataValues . 
+	                 ?observation ssn:observationResult ?sensorOutput .
+	                 ?observation  ssn:observedProperty ?property  .
+                                         ?sensorOutput  ssn:hasDatetime ?pressuretime .
+	                 FILTER regex(str(?property), &quot;personInBed&quot;) .
+ 	                 FILTER (?dataValues &lt; 50) . 
+                                         ?sensorOutputWardrobe  DUL:hasDataValue ?dataValuesWardrobe . 
+	                 ?observationWardrobe ssn:observationResult ?sensorOutputWardrobe .
+	                 ?observationWardrobe  ssn:observedProperty ?propertyWardrobe  .
+                                         ?sensorOutputWardrobe  ssn:hasDatetime ?wardrobetime .
+	                 FILTER regex(str(?propertyWardrobe), &quot;wardrobeOpened&quot;) . 
+                                         FILTER (?dataValuesWardrobe = 1) .
+	                 ?sensorOutputUp  DUL:hasDataValue ?dataValuesUp . 
+	                 ?observationUp ssn:observationResult ?sensorOutputUp .
+	                 ?observationUp  ssn:observedProperty ?propertyUp  .
+                                         ?sensorOutputUp  ssn:hasDatetime ?uptime .
+	                 FILTER regex(str(?propertyUp), &quot;personUp&quot;) .  
+                                         FILTER (?dataValuesUp &lt; 30) . 
+                             FILTER (?pressuretime = ?wardrobetime ) .
+      FILTER (?wardrobetime = ?uptime)  . }
+ORDER BY DESC(?wardrobetime)</SPARQLrule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#PersonInRoomSensorOutput -->
+
+    <owl:NamedIndividual rdf:about="http://purl.oclc.org/NET/ssnx/ssn#PersonInRoomSensorOutput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomOutput"/>
+        <DUL:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YES</DUL:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#PersonUpSensorOutput -->
+
+    <owl:NamedIndividual rdf:about="http://purl.oclc.org/NET/ssnx/ssn#PersonUpSensorOutput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpOutput"/>
+        <DUL:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YES</DUL:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#wardrobeObservation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeObservation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wordrobeOpeningObservation"/>
+        <ssn:observationResult rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpeningSensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpeningSensorOutput -->
+
+    <owl:NamedIndividual rdf:about="http://purl.oclc.org/NET/ssnx/ssn#wardrobeOpeningSensorOutput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#wardobeOutput"/>
+        <DUL:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YES</DUL:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomObservation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomObservation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonInRoomObservation"/>
+        <ssn:observationResult rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#PersonInRoomSensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpObservation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpObservation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rzgheib/ontologies/2016/11/CoSSN#PersonUpObservation"/>
+        <ssn:observationResult rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#PersonUpSensorOutput"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
