@@ -139,8 +139,8 @@ public class ForceSensor implements SerialPortEventListener {
 		String[] res = input.split(" ");
 		double force = Double.parseDouble(res[res.length-2]);
 		return force;
-	}
-*/
+	}*/
+/*
 	public static void main(String[] args) throws Exception {
 		ForceSensor main = new ForceSensor();
 		main.initialize();
@@ -153,5 +153,5 @@ public class ForceSensor implements SerialPortEventListener {
 		};
 		t.start();
 		System.out.println("Started");
-	}
+	}*/
 }

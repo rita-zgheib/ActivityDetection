@@ -29,5 +29,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/rzgheib/workspace-activityDetection/mfz-rxtx-2.2/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rzgheib/workspace-activityDetection/jgrove-1.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

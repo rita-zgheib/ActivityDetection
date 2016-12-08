@@ -1,10 +1,13 @@
 package com.grovepi.mqtt.virtualSemanticSensor;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.rdf4j.query.BindingSet;
+import org.eclipse.rdf4j.repository.RepositoryException;
+import org.eclipse.rdf4j.rio.RDFParseException;
 
 import com.grovepi.mqtt.connection.MqttPublisherSubscriber;
 import com.grovepi.semantic.enrichment.VirtualSemanticSensor;
@@ -14,7 +17,7 @@ public class WearingClothes_App {
 	private static  boolean SUBSCRIBER = true;
 	
 	
-	public static void main(String[] args) throws MqttException, InterruptedException, FileNotFoundException {
+	public static void main(String[] args) throws MqttException, InterruptedException, RDFParseException, RepositoryException, IOException {
 		//create virtualSemanticSensor in ssnApplication
 		VirtualSemanticSensor wearingClothes = new VirtualSemanticSensor("WearingSensor",
 				"WearingClothesSensor1", "WearingClothes","activity", "");
@@ -23,6 +26,7 @@ public class WearingClothes_App {
 		MqttPublisherSubscriber app =  new MqttPublisherSubscriber("wearingClothes-Client"); 
 		app.runClient();
 		String[] topics = new String[]{"personInBed","personUp","wardrobeOpened"};
+		ApplicationRulesQueries wearingClothesquery = new ApplicationRulesQueries();
 		String activity = "";
 		
 		for (;;){
@@ -34,15 +38,15 @@ public class WearingClothes_App {
 			
 			if(PUBLISHER){
 				SUBSCRIBER = false;	
-				//for (int i = 0; i < 5; i++){			
-				//ApplicationRulesQueries wearingClothesquery = new ApplicationRulesQueries();
-				ButtonUltrasonicRulesQueries wearingClothesquery = new ButtonUltrasonicRulesQueries();
-				BindingSet res = wearingClothesquery.runQuery();				
-				if (res != null){
+				//for (int i = 0; i < 5; i++){
+				
+				//ButtonUltrasonicRulesQueries wearingClothesquery = new ButtonUltrasonicRulesQueries();
+				BindingSet res = wearingClothesquery.runQuery("dressing");				
+				if (res != null ){ // make a loop while instead of if on res and get the last time.
 					activity = "Wearing his clothes at time: " + res.toString();
 					wearingClothes.addObservation(activity);
 					MqttMessage msg = new MqttMessage(activity.getBytes());
-					app.sendMessage("behaviour", msg.toString());			
+					app.sendMessage("activity", msg.toString());			
 		         		//System.out.print(button.isPressed() ? 1 : 0);	
 				}
 				Thread.sleep(1000);

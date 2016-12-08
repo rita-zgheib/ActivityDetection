@@ -31,10 +31,8 @@ public class SemanticUltrasonicButtonSensors {
 		ultrasonicApp.runClient();
 		
 		for(;;){
-			if(button.buttonNotPressed()){
-			    ButtonSensor.addObservation(0);
-			    ultrasemSensor.addObservation(ultraSens.getDistance());
-			    
+			if(button.buttonPressed()){
+			    ButtonSensor.addObservation(1);		    
 			    Model result = ButtonSensor.getSensorOutput();
 				String resultat = result.toString();
 				String res = resultat.substring(2, resultat.length()-2);
@@ -42,8 +40,9 @@ public class SemanticUltrasonicButtonSensors {
 				//MqttMessage msg = new MqttMessage(" testButton".toString().getBytes());
 				buttonApp.sendMessage("wardrobeOpened", msg.toString());			
 	          		//System.out.print(button.isPressed() ? 1 : 0);
-				
+			}
 				//ultrasonicApp
+			    ultrasemSensor.addObservation(ultraSens.getDistance());
 				Model ultraResult = ultrasemSensor.getSensorOutput();
 				String ultraResultat = ultraResult.toString();
 				String ultraRes = ultraResultat.substring(2, ultraResultat.length()-2);
@@ -52,7 +51,7 @@ public class SemanticUltrasonicButtonSensors {
 				ultrasonicApp.sendMessage("personUp", ultraMsg.toString());
 				
 				//Thread.sleep(1000);
-		    }
+		    
 			
 		}
 	

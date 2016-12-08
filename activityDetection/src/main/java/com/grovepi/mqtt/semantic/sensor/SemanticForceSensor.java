@@ -3,6 +3,7 @@ package com.grovepi.mqtt.semantic.sensor;
 import com.grovepi.physical.sensors.jgrove.ForceSensor;
 
 public class SemanticForceSensor {
+	// runs on arduino 
 	public static void main(String[] args) throws Exception {
 		ForceSensor main = new ForceSensor();
 		main.initialize();

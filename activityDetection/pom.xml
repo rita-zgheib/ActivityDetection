@@ -34,11 +34,11 @@
       <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
       <version>1.0.2</version>
     </dependency>
-    <dependency>
+  <!--  <dependency>
       <groupId>com.jgrove.code</groupId>
       <artifactId>jgrove</artifactId>
       <version>1.0</version>
-    </dependency>
+    </dependency> -->
     <dependency>
     	<groupId>ch.qos.logback</groupId>
     	<artifactId>logback-classic</artifactId>

@@ -4,9 +4,6 @@ import java.io.FileNotFoundException;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
 
-import com.grovepi.mqtt.semantic.sensor.groveButtonSensorThread;
-import com.grovepi.mqtt.semantic.sensor.groveUltrasonicSensorThread;
-
 class SensorsThreads {
 
 	public static void main(String[] args) throws FileNotFoundException, MqttException {

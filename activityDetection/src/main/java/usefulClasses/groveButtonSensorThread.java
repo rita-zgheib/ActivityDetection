@@ -1,4 +1,4 @@
-package com.grovepi.mqtt.semantic.sensor;
+package usefulClasses;
 
 import java.io.FileNotFoundException;
 
