@@ -30,7 +30,7 @@ public class groveUltrasonicSensorThread implements Runnable {
 	public void run() {	
 		//if (ultrasens.getDistance() < 30) {
 			try {
-				ultrasemSensor.addObservation(ultrasens.getDistance());
+				ultrasemSensor.addObservation(ultrasens.getDistance(), ultrasemSensor.getDatetime());
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

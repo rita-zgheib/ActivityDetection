@@ -40,7 +40,7 @@ public class groveButtonSensorThread implements Runnable{
 	public void run() {	
 		if(button.buttonNotPressed()){
 		    try {
-				ButtonSensor.addObservation(0);
+				ButtonSensor.addObservation(0, ButtonSensor.getDatetime());
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

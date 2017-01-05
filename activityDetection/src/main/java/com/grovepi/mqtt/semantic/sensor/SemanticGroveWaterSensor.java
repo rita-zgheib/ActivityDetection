@@ -19,7 +19,7 @@ public class SemanticGroveWaterSensor {
 		MqttPublisher app = new MqttPublisher("WaterClient-Pub");
 		app.runClient();
 		for(;;){
-			WaterSensor.addObservation(water.getValue());
+			WaterSensor.addObservation(water.getValue(), WaterSensor.getDatetime());
 			Model waterResult = WaterSensor.getSensorOutput();
 			String waterResultat = waterResult.toString();
 			String waterRes = waterResultat.substring(2, waterResultat.length()-2);

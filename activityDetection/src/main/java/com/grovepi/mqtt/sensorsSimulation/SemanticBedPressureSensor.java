@@ -28,7 +28,7 @@ public class SemanticBedPressureSensor {
 		app.runClient();
 		
 		for (int i = 0; i < 40; i++){
-			 pressureSensor.addObservation(i*10);
+			 pressureSensor.addObservation(i*10,pressureSensor.getDatetime());
 			 Model result = pressureSensor.getSensorOutput();
 			 String resultat = result.toString();
 			 String res = resultat.substring(2, resultat.length()-2);

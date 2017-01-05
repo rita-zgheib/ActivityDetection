@@ -128,7 +128,7 @@ public class SemanticSensor {
 		 }		
 	}
 		
-	public void addObservation(int value) throws FileNotFoundException{
+	public void addObservation(int value, Timestamp t) throws FileNotFoundException{
 		//Repository rep = new SailRepository(new ForwardChainingRDFSInferencer(new MemoryStore()));
 		//rep.initialize();
 		//ValueFactory f = rep.getValueFactory();		
@@ -159,7 +159,7 @@ public class SemanticSensor {
 		
 		Literal val = f.createLiteral(value);
 		//Literal datetime = f.createLiteral(new Timestamp(date.getTime()));
-		Literal datetime = f.createLiteral(getDatetime());
+		Literal datetime = f.createLiteral(t);
 		//he gets msg from grovePi supposons 
 		 
 		 try  {

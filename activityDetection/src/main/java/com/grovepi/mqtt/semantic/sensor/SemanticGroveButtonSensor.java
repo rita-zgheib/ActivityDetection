@@ -21,7 +21,7 @@ public class SemanticGroveButtonSensor extends Thread { //later on it will exten
 		app.runClient();
 		for(;;)
 			if(button.buttonNotPressed()){
-				    ButtonSensor.addObservation(0);
+				    ButtonSensor.addObservation(0, ButtonSensor.getDatetime());
 				    Model result = ButtonSensor.getSensorOutput();
 					String resultat = result.toString();
 					String res = resultat.substring(2, resultat.length()-2);

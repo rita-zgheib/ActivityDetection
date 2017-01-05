@@ -30,7 +30,7 @@ public class SemanticVibrationSensor {
 			app.runClient();
 			//change topic to floorVibration later
 			for (int i = 0; i < 30; i++){
-				vibrationSensor.addObservation(i*10);
+				vibrationSensor.addObservation(i*10,vibrationSensor.getDatetime());
 				Model result = vibrationSensor.getSensorOutput();
 				String resultat = result.toString();
 				String res = resultat.substring(2, resultat.length()-2);

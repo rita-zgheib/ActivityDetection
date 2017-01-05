@@ -28,7 +28,7 @@ public class SemanticButtonSensor {
 			app.runClient();
 			
 			for (int i = 0; i < 30; i++){
-				ButtonSensor.addObservation(i%2);
+				ButtonSensor.addObservation(i%2,ButtonSensor.getDatetime());
 				Model result = ButtonSensor.getSensorOutput();
 				String resultat = result.toString();
 				String res = resultat.substring(2, resultat.length()-2);

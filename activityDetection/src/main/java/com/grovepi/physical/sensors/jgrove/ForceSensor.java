@@ -118,7 +118,7 @@ public class ForceSensor implements SerialPortEventListener {
 	                if(res[0].equals("Force:")){
 	                	double force = Double.parseDouble(res[res.length-2]);
 	                	System.out.println("Force is: " + force);
-	                	ForceSensor.addObservation((int)force);
+	                	ForceSensor.addObservation((int)force, ForceSensor.getDatetime());
 		       			Model result = ForceSensor.getSensorOutput();
 		       			String resultat = result.toString();
 		       			String forceRes = resultat.substring(2, resultat.length()-2);

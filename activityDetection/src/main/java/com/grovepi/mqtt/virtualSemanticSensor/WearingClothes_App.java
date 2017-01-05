@@ -1,6 +1,5 @@
 package com.grovepi.mqtt.virtualSemanticSensor;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -45,8 +44,8 @@ public class WearingClothes_App {
 				if (res != null ){ // make a loop while instead of if on res and get the last time.
 					activity = "Wearing his clothes at time: " + res.toString();
 					wearingClothes.addObservation(activity);
-					MqttMessage msg = new MqttMessage(activity.getBytes());
-					app.sendMessage("activity", msg.toString());			
+					//MqttMessage msg = new MqttMessage(activity.getBytes());
+					app.sendMessage("activity", res.toString());			
 		         		//System.out.print(button.isPressed() ? 1 : 0);	
 				}
 				Thread.sleep(1000);
